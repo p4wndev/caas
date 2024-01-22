@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='assets/ctuIcon.png') }}" />
+    <title>CAAS - Hệ Thống Tư Vấn Tuyển Sinh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script> -->
+    
+  </head>
+  <body>
+    <div id="root">
+      <div class="App">
+        <div class="sideBar">
+          <div class="upperSide">
+            <div class="upperSideTop">
+              <img class="Logo" src="{{ url_for('static', filename='assets/ctuIcon.png') }}">
+              <div class="upperSideTopBrand">
+                <span class="brand">CAAS</span>
+                <p>Hệ Thống Tư Vấn Tuyển Sinh</p>
+              </div>      
+            </div>
+            <button class="midBtn"><i class="ri-add-line"></i>Cuộc hội thoại mới</button>
+            <div class="upperSideBottom">
+              <button class="query"><i class="ri-chat-4-line"></i>Trường CNTT và TT</button>
+              <button class="query"><i class="ri-chat-4-line"></i>Trường Kinh tế</button>
+            </div>
+          </div>
+          <div class="lowerSide">
+            <div class="listItems"><button class="bottomBtn"><i class="ri-home-fill"></i>Trang Chủ</button></div>
+            <div class="listItems"><button class="bottomBtn"><i class="ri-settings-fill"></i>Cài Đặt</button></div>
+          </div>
+        </div>
+        <div class="main">
+            <div class="mainChat">
+
+                    <div class="chats">
+                      {% if error_message %}
+                      <div class="alert alert-danger d-flex align-items-center alert-dismissible fade " role="alert">
+                        <div>
+                          <strong>{{ error_message }}</strong>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                      </div>
+                      {% endif %}
+                        <div id="chat-container">
+                        
+                            <div id="chat-display"></div>
+                            <div id="loader" class="loader"></div>
+
+                        </div>
+
+
+                        
+                    </div>
+
+
+                    <div class="chatFooter">
+                        <div class="inp">
+                            <form class="inp" id="message-form" enctype="multipart/form-data">
+                              <input type="file" id="image-input" name="image-input" accept="image/*">
+                              <label id="image-input-icon" for="image-input"><i class="ri-upload-2-fill"></i></label>
+                              <input type="text" id="user-input" name="user-input" value="{{ text }}" placeholder="Đặt câu hỏi...">
+                            </form>
+                            <form action="/voice-input" method="post"><button type="submit" class="mic"><i class="ri-mic-fill"></i></button></form>
+                            <button class="send" type="button" onclick="sendMessage()"><i class="ri-send-plane-2-fill"></i></button>
+
+                        </div>
+                        
+                    </div>
+                    
+            </div>
+            <p style="text-align: center; margin-top: 1rem;">© 2024 Đại học Cần Thơ</p>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

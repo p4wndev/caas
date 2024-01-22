@@ -1,0 +1,34 @@
+recipe: default.v1
+language: vi
+pipeline:
+- name: WhitespaceTokenizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: LanguageModelFeaturizer
+  model_name: roberta
+- name: DIETClassifier
+  epochs: 100
+  embedding_dimension: 20
+  constrain_similarities: true
+  use_masked_language_model: true
+- name: EntitySynonymMapper
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy
+  threshold: 0.5
+  ambiguity_threshold: 0.2
+  core_fallback_threshold: 0.5
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: True
+- name: UnexpecTEDIntentPolicy
+  max_history: 5
+  epochs: 100
+- name: TEDPolicy
+  max_history: 5
+  epochs: 100
+  constrain_similarities: true
+# - name: FallbackClassifier
+
+assistant_id: 20240101-094341-hasty-team

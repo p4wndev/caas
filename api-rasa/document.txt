@@ -1,0 +1,22 @@
+- intent:
+#keyword: 'greet', phía sau là giải thích
+Chung:
+1. greet: Lời chào hỏi		50
+2. goodbye: Chào tạm biệt   50
+3. thank: Cảm ơn            50
+4. help: tìm sự giúp đỡ     60
+5. ask_name: hỏi tên nguời dùng     70
+6. profile: hồ sơ nhập học          110
+7. dormitory: kiến túc xá           110
+8. facilities: cơ sở vật chất       110
+9. time: Thời gian hoạt động hàng ngày của trường       110
+
+
+Riêng:
+1. benchmark: Điểm chuẩn của 1 ngành    110
+2. tuition: Học phí của 1 ngành         110
+3. curriculum: Chương trình đào tạo     130
+4. criterias: chỉ tiêu của 1 ngành      120
+5. review: các ý kiến về ngành, trường  170
+6. career_opportunities: cơ hội nghề nghiệp 110
+7. teach: Ngành này dạy gì  120

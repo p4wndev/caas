@@ -1,0 +1,1666 @@
+version:  "3.1"
+
+nlu: 
+- intent: greet
+  examples: |
+    - chào bạn
+    - xin chào
+    - Hey
+    - chào
+    - cu
+    - hey
+    - alo
+    - hi
+    - hello
+    - hù
+    - Xin chào bạn nhé
+    - Chào
+    - Xin chào
+    - Hôm nay bạn thế nào
+    - bạn có ở đó không
+    - bạn đâu rồi
+    - hey sờ li li
+    - alo alo
+    - alo
+    - lô lô
+    - đâu rồi huynh đài
+    - bot ơí ời ơi
+    - chào bot
+    - bạn đang làm gì thế
+    - chào bạn hiền
+    - xin chào
+    - Hey
+    - chào
+    - Xin chào mọi người
+    - Hi cả nhà
+    - Greetings!
+    - Hello các bạn
+    - Hế nhô!
+    - Chào buổi sáng
+    - Chào buổi chiều
+    - Chào buổi tối
+    - Hôm nay thế nào?
+    - Có ai ở đây không?
+    - Hey bạn
+    - heo
+    - chào mày bot ơi
+    - chào bạn
+    - chào bot
+    - hi hello
+    - hờ lô lô
+    - hê sờ li li
+    - xin chào bot
+    - bot ơi
+    - chào cu
+    - mầy đâu rồi
+    - bạn đâu rồi, ngôi lên đây
+    - xin chào bạn bot thân yêu
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - bye
+    - goodbye
+    - hẹn gặp lại
+    - tắt đi
+    - gặp lại sau
+    - Bye nhé
+    - Tôi phải đi rồi, hẹn gặp lại sau nhé
+    - Tạm biệt và chăm sóc bản thân
+    - Mình nói chuyện sau nhé, tạm biệt
+    - Tôi sẽ nhớ bạn, tạm biệt
+    - Bye, hy vọng gặp lại bạn sớm
+    - gặp lại bạn sau
+    - hẹn gặp lại bạn sau
+    - tôi có việc rồi
+    - mình có việc rồi
+    - chút mình gặp lại 
+    - tôi ra ngoài một chút, chút vô nói chuyện sau
+    - tôi hiểu rồi, dừng ở đây đi
+    - dừng lại đi
+    - Tạm biệt nhé, hẹn gặp lại vào dịp khác
+    - Đã đến lúc phải nói lời chia tay
+    - Tôi rất vui được gặp bạn, nhưng giờ tôi phải đi rồi
+    - Tạm biệt, mong sớm gặp lại bạn
+    - Hẹn gặp lại, chúc bạn có một ngày vui vẻ
+    - Tao đi đây
+    - Sàm quá đi
+    - mày chơi mình ên đi
+    - tạm biệt, không gặp lại
+    - đi chết luôn đi
+    - không hẹn gặp lại
+    - gặp lại sau
+    - Bye nhé
+    - chào tạm biệt
+    - nói chia tay
+    - tới lúc phải đi
+    - tạm biệt bạn
+    - lời tạm biệt
+    - hẹn gặp lại sau nhé
+    - tôi sẽ rời đi
+    - hẹn gặp bạn sau
+    - tôi sẽ quay lại
+    - hẹn gặp sau nhé, bạn yêu
+    - tạm biệt, hãy giữ an toàn
+    - cúi đầu chào tạm biệt
+    - lời chào tạm biệt cuối cùng
+    - đã đến lúc chấm dứt
+    - tạm biệt vĩnh viễn
+    - chúc bạn may mắn
+    - tạm biệt, hãy giữ lấy niềm vui
+    - lời chào từ bên kia
+    - tạm biệt, chúc mọi điều tốt lành
+- intent: thank
+  examples: |
+    - cảm ơn bạn nhé
+    - cảm ơn
+    - thank
+    - cám ơn
+    - tuyệt
+    - good
+    - tốt
+    - làm tốt lắm
+    - hay đấy
+    - rất tốt
+    - Cảm ơn sự hỗ trợ của bạn
+    - Cảm ơn bạn nhé
+    - Cảm ơn
+    - Xin chân thành cảm ơn
+    - Rất biết ơn bạn
+    - Tôi thật sự đánh giá cao sự giúp đỡ của bạn
+    - Tôi không thể đủ biết ơn bạn
+    - Bạn đã làm điều tuyệt vời, cảm ơn
+    - Cảm ơn bạn rất nhiều
+    - Tôi rất biết ơn sự hỗ trợ của bạn
+    - Rất chân thành cảm ơn sự hỗ trợ của bạn
+    - Yêu bạn lắm đó
+    - tuyệt lắm đó
+    - hay lắm
+    - bạn làm tốt lắm
+    - Rất cảm ơn bạn
+    - Xin cảm ơn
+    - Tôi biết ơn điều đó
+    - Cảm ơn bạn rất nhiều
+    - Cảm ơn vì sự giúp đỡ
+    - Cảm ơn vì đã làm điều đó
+    - Tôi muốn bày tỏ lòng biết ơn
+    - Cảm ơn vì đã làm điều tuyệt vời đó
+    - Làm ơn để tôi biết ơn
+    - Xin cảm ơn sự hỗ trợ của bạn
+    - Tôi cảm ơn món quà này
+    - Xin chân thành cảm ơn
+    - Cảm ơn vì đã ở đó cho tôi
+    - Tôi không thể đủ biết ơn
+    - Cảm ơn vì đã dành thời gian cho tôi
+    - Xin cảm ơn lòng tốt của bạn
+    - tôi rất biết ơn bạn
+    - cảm ơn sự hiểu biết của bạn
+    - cảm ơn vì mọi công sức
+    - tôi đánh giá cao điều này
+    - lòng biết ơn không ngừng
+    - cảm ơn vì mọi sự hỗ trợ
+    - cảm ơn bạn đã nỗ lực
+    - rất cảm kích
+    - lời cảm ơn chân thành nhất
+    - cảm ơn rất nhiều, bạn là người tuyệt vời
+- intent: help
+  examples: |
+    - bạn giúp được gì cho tôi
+    - bạn làm được gì
+    - help
+    - bot làm được gì
+    - khả năng của bạn là gì
+    - chức năng của bạn là gì
+    - bạn có tài gì
+    - bạn biết gì
+    - Bạn có thể giúp tôi như thế nào
+    - Nhiệm vụ chính của bạn là gì
+    - Bạn có khả năng làm gì
+    - Bot có thể làm những gì
+    - Tôi cần được giúp đỡ, bạn có thể làm gì
+    - Chức năng chính của bot là gì
+    - Bot có khả năng gì đặc biệt
+    - Bạn có kỹ năng hay tài năng nào đặc biệt
+    - Bạn biết những điều gì
+    - Tôi muốn biết về khả năng và chức năng của bạn.
+    - giúp tui với bot
+    - mày làm được những gì
+    - bạn giúp được gì cho tôi
+    - bạn làm được gì
+    - help bot
+    - bot làm được gì
+    - Tôi cần sự giúp đỡ
+    - Bạn có thể giúp tôi không?
+    - Cần hỗ trợ ở đây
+    - Tôi cần một chút giúp đỡ
+    - Làm ơn hỗ trợ tôi
+    - Bot có khả năng giúp đỡ không?
+    - Có thể bạn giúp tôi giải quyết vấn đề này không?
+    - Tôi gặp rắc rối và cần một số hướng dẫn
+    - Hãy giúp tôi hiểu rõ hơn về chức năng của bạn
+    - Tôi muốn biết bot có thể thực hiện các tác vụ gì khác nữa không
+    - Bạn có thể giúp tôi tìm thông tin về một chủ đề cụ thể không?
+    - bạn có khả năng gì
+    - mày là ai?
+    - mày biết được những gì
+    - mày có hay hơn chatgpt hông
+    - bạn khác với những con bot của google hông, mạnh hay yếu hơn
+    - tui cần sự giúp đỡ, bạn có thể hỗ trợ tui hông
+    - tư vấn cho tui nhé
+    - tui muốn bạn tư vấn cho tui
+    - vậy giúp tui xác định nghề nghiệp đi
+    - giúp tui định hướng nghề nghiệp 
+    - tui chưa nắm rõ nghề nghiệp sau này, giúp tui tư vấn với
+    - Tôi đang phân vân giữa việc chọn trường Đại học A và B. Bạn có thể tư vấn về các yếu tố cần xem xét khi lựa chọn trường không
+    - Tôi muốn tìm hiểu về các ngành học phổ biến và triển vọng trong tương lai. Bạn có thể tư vấn cho tôi về những ngành nghề đáng quan tâm không
+    - Tôi đang cần tư vấn về việc chọn một trường học. Bạn có thể giới thiệu cho tôi một số ngành nghề đáng quan tâm không
+    - tui chưa biết nghề nghiệp sau này, giúp tui tư vấn với
+    - Bạn có thể tư vấn cho tôi về vấn đề này được không
+    - Tôi đang đắn đo và cần ý kiến của bạn về việc chọn ngành học.
+    - Tôi muốn bạn tư vấn cho tôi về việc này.
+    - Tôi đang gặp rắc rối và cần một chút tư vấn từ bạn.
+    - Bạn có kinh nghiệm về vấn đề này, có thể tư vấn cho tôi không
+    - Tôi cần một sự đánh giá và tư vấn chân thành từ bạn.
+    - Tôi muốn tư vấn về việc lựa chọn trường học phù hợp với sở thích và năng lực của mình.
+    - Tôi cần một số lời khuyên, bạn có thể giúp không?
+    - Tôi đang gặp vấn đề, bạn có thể tư vấn giúp tôi không?
+    - Tôi cần một chút hướng dẫn, bạn có thể giúp tôi không?
+    - Tôi cần sự tư vấn chuyên nghiệp, bạn có thể giúp tôi không?
+
+- intent: ask_name
+  examples: |
+    - mình là [khanh](name)
+    - mình là [doãn chí phong](name)
+    - cứ gọi mình là [Alix Mie](name)
+    - cứ gọi mình là [Khanh Alic](name)
+    - tớ là [phúc](name)
+    - mình tên [đạt](name)
+    - tui tên [Thanh Phong](name)
+    - mình tên [tiến đạt](name)
+    - tui tên [quỳnh](name)
+    - bà tên [yến](name)
+    - tao tên [dũng](name)
+    - tôi là [An](name)
+    - [phong](name)
+    - [châu thế khanh](name)
+    - [võ trần tuấn anh](name)
+    - [Khanh](name) là tên của mình
+    - xưng mình là [ngọc](name)
+    - biệt danh tui là [hào](name)
+    - mình là [Thế Khanh](name)
+    - tớ là [diệp ưng](name)
+    - mình tên [triệu phong](name)
+    - tui tên [quỳnh anh](name)
+    - bà tên [yến nhi](name)
+    - tao tên [tấn dũng](name)
+    - tôi là [Bình an](name)
+    - [Công Lí](name)
+    - xưng mình là [ngọc thảo](name)
+    - biệt danh tui là [anh Hào](name)
+    - mình tên thật là [châu thế khanh](name) hoặc cứ gọi mình là [khanh](name) cũng được
+    - mọi người gọi mình là [Bi](name) nhưng tên mình là [thắng](name)
+    - ở nhà mình tên [cu đen](name) nhưng trên trường mình tên [lý](name)
+    - Xin chào, tôi là [Nguyễn Thị Minh Hương](name), nhưng bạn có thể gọi tôi là [Hương](name).
+    - Tôi tên là [Lê Văn An](name), người thường gọi tôi là [An](name).
+    - Gọi tôi là [Trần Thanh Tùng](name), hay là [Tùng Rapper](name).
+    - Mình là [Nguyễn Xuân Phúc](name), rất vui được gặp bạn ở đây.
+    - Tôi tên là [Trần Thị Thanh Mai](name), tôi đang tìm hiểu về chủ đề này.
+    - Mình là [Phạm Hồng Hạnh](name), một người yêu thích du lịch và ẩm thực.
+    - Gọi tôi là [Đặng Văn Hùng](name), một người yêu thích thể thao và âm nhạc.
+    - Tôi là [Ngô Bá Khá](name), bạn có thể gọi tôi là [Khá](name).
+    - Mình là [Lý Thị Lan Anh](name), đang học đại học ngành Khoa học Máy tính.
+    - Tôi tên là [Vũ Minh Tuấn](name), là một lập trình viên đam mê công nghệ.
+    - Mình là [Nguyễn Hồng Nga](name), bạn có thể gọi tôi là [Nga](name).
+    - Gọi tôi là [Trần Văn Minh](name), rất vui được làm quen với bạn.
+    - Tôi tên là [Lê Thị Hoa](name), đang làm việc trong lĩnh vực kinh doanh.
+    - Mình là [Nguyễn Đức Long](name), yêu thích nấu ăn và thể thao.
+    - Gọi tôi là [Mai Anh Đào](name), một người yêu thiên nhiên và du lịch.
+    - Tôi tên là [Trần Văn Hùng](name), đam mê âm nhạc và guitar.
+    - Mình là [Nguyễn Thị Thúy Hằng](name), một sinh viên ngành Kinh tế.
+    - Gọi tôi là [Lê Thị Thu](name), là một người yêu sách và nghệ thuật.
+    - Tôi tên là [Phạm Văn Đức](name), đang theo đuổi sự nghiệp trong lĩnh vực IT.
+    - Mình là [Trần Thị Bích Ngọc](name), bạn có thể gọi tôi là [Ngọc](name).
+    - Gọi tôi là [Vân Vy](name), bạn có thể viết tắt là [VV](name) nếu muốn.
+    - Mình tên là [Hải Đăng](name), bạn có thể gọi mình là [Đăng](name) hoặc [Hải](name) cũng được.
+    - Tên mình là [Ngọc Quỳnh](name), nhưng bạn cũng có thể gọi mình là [Quỳnh](name) hoặc [Ngọc](name) nhé.
+    - Gọi mình là [Phương Anh](name), nhưng bạn cũng có thể gọi mình là [Anh](name) hoặc [Phương](name) nếu muốn.
+    - Mình là [Huyền Trang](name), nhưng bạn cứ gọi mình là [Trang](name) cũng được.
+    - Tên mình là [Minh Khôi](name), còn bạn có thể gọi mình là [Khôi](name) thôi.
+    - Gọi mình là [Trung Hiếu](name), nhưng nếu thấy dài dòng bạn cũng có thể gọi [Hiếu](name) hoặc [Trung](name).
+    - Tên mình là [Nguyễn Mai Linh](name), nhưng bạn có thể gọi mình là [Linh](name) nếu muốn.
+    - Cứ gọi mình là [Huy Hoàng](name), không cần cầu kỳ đâu.
+    - Mình tên là [Ngọc Anh](name), bạn cũng có thể gọi mình là [Anh](name) hoặc [Ngọc](name) nhé.
+    - mình là [Phong](name)
+    - mình là [Nguyễn triệu phong](name)
+    - cứ gọi mình là [Alix Milk](name)
+    - cứ gọi mình là [Mèo](name)
+    - Tên mình là [Trang Nguyễn](name)
+    - Gọi mình là [Hồng Anh](name)
+    - Mình tên là [Ngọc Trinh](name)
+    - Bạn có thể gọi mình là [Vân Anh](name)
+    - Gọi mình là [Tùng Lâm](name)
+    - Tên mình là [Thiên Long](name)
+- intent: profile
+  examples: |
+    - Khi trúng tuyển ở trường, tui nên nộp những hồ sơ nào ạ?
+    - Cần chuẩn bị những giấy tờ gì khi đỗ đại học?
+    - Bạn có thể chỉ cho tôi quy trình đăng ký vào trường được không?
+    - Các bước cần thiết khi đăng ký vào trường là gì vậy?
+    - Làm thế nào để tôi có thể theo dõi trạng thái xử lý hồ sơ đăng ký của mình?
+    - Có một số hồ sơ bổ sung nào mà tôi nên chuẩn bị sau khi nhận kết quả đỗ đại học không?
+    - Tôi cần làm gì nếu có thông báo yêu cầu bổ sung hồ sơ đăng ký?
+    - Khi nào là hạn chót để nộp hồ sơ đăng ký nhập học?
+    - Làm thế nào để tôi có thể tải về mẫu hồ sơ đăng ký nhập học?
+    - Bước đầu tiên nên làm khi bắt đầu quá trình làm hồ sơ nhập học là gì?
+    - Có một trang web nào chứa thông tin chi tiết về yêu cầu hồ sơ nhập học không?
+    - Làm thế nào để tôi có thể nộp hồ sơ nhập học trực tuyến?
+    - Bạn có biết về các hạn chót quan trọng trong quá trình làm hồ sơ không?
+    - Có những tài liệu nào tôi cần chuẩn bị trước khi làm hồ sơ đăng ký?
+    - Làm thế nào để tôi có thể liên hệ với bộ phận hỗ trợ đăng ký học để được giúp đỡ?
+    - Tôi cần ghi chú những điều gì khi điền thông tin vào hồ sơ nhập học?
+    - Có những bước cụ thể nào tôi cần thực hiện khi nộp hồ sơ nhập học?
+    - Làm thế nào để kiểm tra trạng thái xử lý của hồ sơ đăng ký của tôi?
+    - Có yêu cầu về kích thước hoặc định dạng hình ảnh khi gửi hồ sơ không?
+    - Làm thế nào để tôi có thể yêu cầu giấy báo nhập học sau khi hoàn tất hồ sơ?
+    - Tôi cần chú ý đến điều gì khi gửi hồ sơ qua đường bưu điện?
+    - Có quy định nào về việc thay đổi thông tin trong hồ sơ sau khi đã nộp không?
+    - Làm thế nào để tôi có thể xác nhận rằng hồ sơ đăng ký của mình đã được nhận đủ?
+    - Có những biểu mẫu hay tài liệu hướng dẫn nào tôi nên tham khảo khi làm hồ sơ nhập học?
+    - Bạn có thông tin về các trung tâm hỗ trợ hồ sơ đăng ký không?
+    - Làm thế nào để tôi có thể thêm thông tin bổ sung sau khi đã gửi hồ sơ đăng ký?
+    - Có các buổi hướng dẫn nào về làm thủ tục nhập học mà tôi cần tham gia không?
+    - Có cách nào để đổi thông tin trong hồ sơ sau khi đã gửi đi không?
+    - Làm thế nào để tôi có thể kiểm tra xem tất cả các tài liệu đã được nộp đầy đủ chưa?
+    - Bạn có biết về các hướng dẫn chi tiết cho việc làm hồ sơ nhập học không?
+    - Làm thế nào để tôi có thể xác nhận rằng hồ sơ đăng ký của mình đã được xem xét?
+    - Có những bước cụ thể nào tôi nên thực hiện để hoàn tất hồ sơ đăng ký?
+    - Bạn có biết về các hình thức nộp hồ sơ khác nhau không?
+    - Làm thế nào để tôi có thể yêu cầu giấy chứng nhận đã nộp hồ sơ đăng ký?
+    - Tôi cần chú ý đến điều gì khi chụp và tải lên ảnh cho hồ sơ đăng ký?
+    - Bạn có biết về các phí liên quan đến việc xử lý hồ sơ đăng ký không?
+    - Làm thế nào để tôi có thể thay đổi thông tin địa chỉ sau khi đã gửi hồ sơ?
+    - Có các hướng dẫn cụ thể về việc làm hồ sơ trực tuyến không?
+    - Làm thế nào để tôi có thể nhận được xác nhận khi hồ sơ đăng ký của tôi được xử lý?
+    - Bạn có biết về các quy định đặc biệt khi gửi hồ sơ đăng ký qua đường bưu điện không?
+    - Làm thế nào để tôi có thể kiểm tra kết quả xét duyệt hồ sơ đăng ký của mình?
+    - Tôi có thể nộp hồ sơ trực tuyến ở đâu và khi nào?
+    - Bạn có thông tin về thời gian xử lý hồ sơ đăng ký là bao lâu không?
+    - Làm thế nào để tôi có thể yêu cầu giấy thông báo nhập học sau khi hồ sơ được duyệt?
+    - Tôi cần chú ý đến điều gì khi gửi các văn bản quan trọng kèm theo hồ sơ đăng ký?
+    - Bạn có biết về các bước tiếp theo sau khi hồ sơ đã được xác nhận là đầy đủ không?
+    - Làm thế nào để tôi có thể tìm hiểu về trạng thái xử lý của hồ sơ trực tuyến?
+    - Làm thế nào để tôi có thể tối ưu hóa hồ sơ đăng ký của mình?
+    - Bạn có biết về những động thái cần thiết sau khi hồ sơ được chấp nhận?
+    - Có gì đặc biệt mà tôi nên biết về việc nộp hồ sơ trực tiếp?
+    - Làm thế nào để tôi có thể xác minh tính chính xác của thông tin trong hồ sơ?
+    - Có hướng dẫn chi tiết nào về cách điều chỉnh hồ sơ đăng ký sau khi gửi đi không?
+    - Bạn có thể chia sẻ về những trải nghiệm của sinh viên khác trong quá trình làm hồ sơ không?
+    - Làm thế nào để tôi có thể theo dõi tiến trình xử lý của hồ sơ đăng ký?
+    - Có những mẹo nào giúp tôi nhanh chóng và hiệu quả khi làm hồ sơ không?
+    - Bạn có biết về các biện pháp an ninh và bảo mật được áp dụng khi tôi gửi hồ sơ trực tuyến không?
+    - Làm thế nào để tôi có thể liên hệ với người chịu trách nhiệm về hồ sơ đăng ký?
+    - Có đợt tư vấn hoặc buổi hướng dẫn cụ thể nào cho người làm hồ sơ không?
+    - Bạn có thể giải thích về các bước kiểm tra hồ sơ để đảm bảo tính đầy đủ không?
+    - Làm thế nào để tôi có thể yêu cầu sự hỗ trợ nếu tôi gặp vấn đề khi làm hồ sơ trực tuyến?
+    - Có cách nào để kiểm tra xem hồ sơ đăng ký của tôi đã được gửi thành công chưa?
+    - Bạn có thể chia sẻ về những ngày giờ quan trọng liên quan đến làm hồ sơ không?
+    - Làm thế nào để tôi có thể xác nhận rằng tất cả các giấy tờ đã được xử lý đúng cách?
+    - Có những nguồn thông tin nào giúp tôi hiểu rõ hơn về yêu cầu của hồ sơ đăng ký không?
+    - Bạn có thể đề cập đến các khía cạnh cần chú ý khi tôi chọn chế độ gửi hồ sơ qua đường bưu điện không?
+    - Làm thế nào để tôi có thể đăng ký nhận thông báo qua email về tiến trình xử lý hồ sơ không?
+    - Địa chỉ chính xác nộp hồ sơ ở đâu vậy?
+    - Khu vực ở [ctu]](university) để tui nộp hồ sơ trực tiếp ở đâu vậy bot
+    - Trường [ctu]](university) rất là rộng, làm sao tui biết nộp hồ sơ ở đâu và cho ai bây giờ?
+    - Địa điểm nào người ta tiếp nhận hồ sơ đăng kí nhập học tại [ctu]](university) vậy
+    - Nộp hồ sơ ở đâu khi vào [ctu]](university)
+    - Cho tôi biết danh sách các tài liệu cần thiết để nộp hồ sơ nhập học vào [Trường Bách khoa](university)
+    - Trường [Đại học Cần Thơ](university) yêu cầu những giấy tờ gì khi đăng ký nhập học?
+    - Hồ sơ đăng ký học của Trường [Công nghệ thông tin](university) bao gồm những thông tin nào?
+    - Làm thế nào để hoàn thành hồ sơ nhập học vào [Trường Nông nghiệp](university)?
+    - Xin hãy cho biết các bước cần thực hiện để đăng ký vào [Trường Khoa học Tự nhiên](university).
+    - [Trường Kinh tế](university) yêu cầu những giấy tờ gì khi nộp đơn nhập học?  
+    - Bạn đã từng nộp hồ sơ nhập học tại [trường Đại học Cần Thơ](university) chưa? Vui lòng chia sẻ về trải nghiệm của bạn trong quá trình này.
+    - Cho tôi biết về hồ sơ nhập học của [ctu]](university) cho ngành công nghệ sinh học. Cần phải chuẩn bị những giấy tờ gì?
+    - Bạn có thể cung cấp thông tin về các bước cần thực hiện để hoàn thành hồ sơ nhập học của trường [CTU](university) không?
+    - Hồ sơ nhập học của [ctu]](university) gồm những phần nào cần phải điền thông tin?Có những điều gì đặc biệt mà tôi cần biết không?
+    - Tôi cần mang theo những tài liệu gì khi đến gặp cố vấn đào tạo?
+    - Bạn có thể hướng dẫn tôi về các biểu mẫu đăng ký không?
+    - Các hồ sơ và giấy tờ quan trọng nào tôi cần đưa kèm khi nộp đơn nhập học?
+    - Có quy định gì về ảnh và bản sao chứng minh nhân dân không?
+    - Làm thế nào để kiểm tra tình trạng xác nhận hồ sơ đăng ký của tôi?
+    - Bạn có thể giải thích về thời hạn nộp hồ sơ không?
+    - Tôi nên liên hệ với ai nếu có vấn đề về hồ sơ nhập học?
+    - Bạn có thể đề xuất những hồ sơ cần chuẩn bị trước khi nhập học không?
+    - Tôi cần làm gì sau khi đã nộp hồ sơ đăng ký?
+    - Có hỗ trợ gì cho người nộp hồ sơ có hoàn cảnh khó khăn không?
+    - Bạn có thể giải thích về thời hạn nộp hồ sơ không?
+    - Tôi nên liên hệ với ai nếu có vấn đề về hồ sơ nhập học?
+    - Bạn có thể đề xuất những hồ sơ cần chuẩn bị trước khi nhập học không?
+    - Tôi cần làm gì sau khi đã nộp hồ sơ đăng ký?
+    - Có hỗ trợ gì cho người nộp hồ sơ có hoàn cảnh khó khăn không?
+    - Làm thế nào để xác nhận việc đóng học phí sau khi nhập học?
+    - Cần phải làm gì nếu có thông tin trong hồ sơ cần điều chỉnh?
+    - Bạn có thể mô tả về quy trình xét tuyển không?
+    - Tôi có cần đóng bảo hiểm y tế khi nhập học không?
+    - Làm thế nào để theo dõi trạng thái xét tuyển của tôi?
+    - Làm thế nào để xác nhận việc đóng học phí sau khi nhập học?
+    - Cần phải làm gì nếu có thông tin trong hồ sơ cần điều chỉnh?
+    - Bạn có thể mô tả về quy trình xét tuyển không?
+    - Tôi có cần đóng bảo hiểm y tế khi nhập học không?
+    - Làm thế nào để cập nhật thông tin liên lạc sau khi đăng ký?
+    - Bạn có thể hướng dẫn về quy định đổi ngành hoặc chuyển trường không?
+    - Tôi có thể nộp hồ sơ đăng ký trực tuyến không?
+    - Cần phải làm gì nếu tôi quên mật khẩu đăng nhập vào hệ thống đăng ký?
+    - Bạn có thể giải đáp về quy tắc chọn ngành và lớp học không?
+    - Tôi cần cập nhật thông tin gia đình trong hồ sơ, làm thế nào tôi có thể làm điều này?
+
+- intent: dormitory
+  examples: |
+    - Tôi đang quan tâm về kí túc xá của trường [Đại học Cần Thơ](university)
+    - Tôi muốn tìm hiểu về kí túc xá của trường [ctu](university).
+    - Tôi muốn biết về dịch vụ và hoạt động giải trí trong kí túc xá của trường [Đại học cần thơ](university).
+    - Hãy cho tôi biết về chính sách đặt chỗ và thời gian ở tại kí túc xá của trường [CTU](university).
+    - Tôi quan tâm đến việc đăng ký và ưu đãi cho sinh viên nước ngoài trong kí túc xá của trường 
+    - Cho tôi thông tin về các loại phòng và mức giá trong kí túc xá của [ctu](university).
+    - Tôi cần biết về chính sách và quy định về vệ sinh và an ninh trong kí túc xá của [trường Công nghệ thông tin](university).
+    - Tôi quan tâm đến chính sách và tiện ích của kí túc xá của trường 
+    - Tôi cần biết thêm thông tin về kí túc xá tại trường 
+    - Tôi quan tâm đến giá cả và loại phòng trong kí túc xá của trường [Đại học CT](university).
+    - Tôi muốn tìm hiểu về quy định và khu tiện ích trong kí túc xá khu A của trường [cần thơ](university).
+    - Tôi cần biết về chính sách và thời gian đăng ký ở kí túc xá của trường 
+    - Cho tôi thông tin về dịch vụ giặt ủi và phòng tập thể dục thể hình trong kí túc xá khu B của [ctu](university).
+    - Hãy cho tôi biết về chương trình đón tiễn và hỗ trợ sinh viên quốc tế ở kí túc xá  
+    - Tôi quan tâm đến các hoạt động xã hội và tổ chức vui chơi giải trí trong kí túc xá 
+    - Xin thông tin về loại phòng và giá cả giường 4 tầng lầu 1 trong kí túc xá khu A của trường 
+    - Tôi muốn biết về chính sách và ưu đãi đặt chỗ dành cho học viên mới trong kí túc xá của trường [Đại học ct](university).
+    - Hãy miêu tả về môi trường sống và học tập của kí túc xá khu B tại [my ctu]](university).
+    - Tôi đang quan tâm về kí túc xá khu B của trường [Đại học Cần Thơ](university). Bạn có thể cung cấp thông tin về kí túc xá này được không ạ?
+    - Kí túc xá của trường [Đại học ct](university) có cung cấp dịch vụ ăn uống trong khuôn viên hay không?
+    - Tôi muốn biết về kí túc xá tại trường [Đại học CT](university) cho học sinh năm nhất. Có những điều đặc biệt mà tôi nên biết không?
+    - Học sinh đại học tại trường [Đại học Cần Thơ](university) có thể lựa chọn ở kí túc xá nào trong khuôn viên trường không?
+    - Tôi quan tâm đến chính sách và giá cả của kí túc xá tại trường [Đại học Y Dược Đà Nẵng](university). Bạn có thể cung cấp thông tin chi tiết không ạ?
+    - Kí túc xá tại trường có cung cấp dịch vụ giặt ủi không? Nếu có thì phí dịch vụ như thế nào?
+    - Tôi đang tìm hiểu về kí túc xá dành cho du học sinh tại trường. Bạn có thể cho tôi biết thêm về chương trình này được không?
+    - Kí túc xá khu B của trường có hỗ trợ internet miễn phí cho sinh viên không?
+    - Cho tôi thông tin về kí túc xá khu A tại trường. Tôi quan tâm đến khoảng cách giữa kí túc xá và các tòa nhà học tập của trường.
+    - Kí túc xá của [ctu](university) có cung cấp dịch vụ đưa đón sinh viên từ kí túc xá đến các tòa nhà học tập không? 
+    - Tôi đang quan tâm đến kí túc xá dành cho sinh viên nữ tại trường [Đại học Cần Thơ](university). Bạn có thể cung cấp thông tin về nó không ạ?
+    - Kí túc xá của trường [Đại học Nông nghiệp Hà Nội](university) có hỗ trợ dịch vụ bảo vệ xe máy cũng như các chú bảo vệ 24/7 không? 
+    - Tôi muốn tìm hiểu về kí túc xá của trường. Bạn có thể cho tôi biết về cơ sở vật chất và tiện nghi của kí túc xá không ạ?   
+    - Tôi quan tâm đến chính sách giảm giá và hỗ trợ cho sinh viên nghèo tại kí túc xá tại trường [Đại học cần thơ](university). Bạn có thể cung cấp thông tin về điều này không ạ?    
+    - Kí túc xá của trường có cung cấp dịch vụ hướng dẫn du lịch và tham quan cho sinh viên không?
+    - Tôi đang tìm hiểu về kí túc xá của trường cho sinh viên học cao học. Có những điều đặc biệt mà tôi nên biết không?
+    - Kí túc xá tại trường có khu vực chơi thể thao và tập gym không?
+    - Tôi muốn biết về kí túc xá của trường. Bạn có thể cho tôi biết về điều kiện và tiện ích của kí túc xá này không ạ?
+    - Kí túc xá của trường [Đại học Cần Thơ](university) có gần các cửa hàng tiện lợi và nhà hàng không?
+    - Tôi quan tâm đến chính sách ưu tiên đặt chỗ ở kí túc xá của trường. Bạn có thể cung cấp thông tin chi tiết không ạ?
+    - Kí túc xá tại trường [ctu](university) có cung cấp dịch vụ giặt ủi và làm sạch phòng hàng tuần không?   
+    - Kí túc xá của trường có quy định về thời gian ra vào kí túc xá không?
+    - Kiến túc xá có quy định về thời gian giấc tối ra vào hông? Khuya hay tối nhất là thời gian nào?
+    - Tôi muốn biết về kí túc xá tại trường có cung cấp dịch vụ ăn uống và nhà hàng trong khuôn viên không?
+    - Kí túc xá của trường có giờ giấc giới nghiêm không?
+    - Kí túc xá của trường có khu vực dành riêng cho nữ và nam không?
+    - Cho tôi thông tin về kí túc xá tại trường cho sinh viên năm nhất. Tôi muốn biết về mức phí và chính sách ưu tiên đặt chỗ.
+    - Tôi muốn biết về cơ sở vật chất của ký túc xá tại trường. Có phòng học tập riêng cho sinh viên không?
+    - Kí túc xá của trường có dịch vụ giặt ủi và làm sạch quần áo cho sinh viên không?
+    - Tôi cần thông tin về kí túc xá dành cho người khuyết tật tại trường. Trường có hỗ trợ đặc biệt cho học sinh như thế nào?
+    - Xin cho biết về cơ sở vật chất và các hoạt động giải trí, vui chơi giải lao trong khu vực ký túc xá tại trường [Đại học cần thơ](university).
+    - Hãy mô tả về cơ sở vật chất và tiện nghi của kí túc xá tại trường. Có trung tâm thể dục và dịch vụ chăm sóc sức khỏe không?
+    - Cho tôi thông tin về cơ sở vật chất và chính sách ưu tiên đặt phòng kí túc xá cho sinh viên thuộc dân tộc thiểu số tại trường [Đại học ct](university).
+    - Tôi quan tâm đến cơ sở vật chất của kí túc xá tại trường [Đại học CT](university). Trường có cung cấp dịch vụ y tế nội trú không?
+    - Hãy cho tôi biết về chính sách giảm giá và hỗ trợ kinh tế cho sinh viên khi ở kí túc xá tại trường 
+    - Tôi muốn tìm hiểu về các hoạt động văn hóa và các câu lạc bộ sinh viên trong khuôn viên kí túc xá tại trường 
+    - Hãy cung cấp thông tin về cơ sở vật chất và tiện ích trong kí túc xá dành cho học viên quốc tế tại trường [Đại học Cần Thơ](university).
+    - Tôi muốn biết về quy tắc ở trong kí túc xá của trường [Đại học Cần Thơ](university).
+    - Có những dịch vụ cụ thể nào được cung cấp trong kí túc xá tại [ctu](university)?
+    - Làm thế nào để đăng ký chỗ ở trong kí túc xá của [Đại học Cần Thơ](university)?
+    - Tôi muốn biết về các sự kiện và hoạt động giải trí trong kí túc xá tại [ctu](university).
+    - Có chính sách đặc biệt nào cho việc ở trong kí túc xá của trường [Đại học Cần Thơ](university) không?
+    - Làm thế nào để đặt phòng và có thông tin về thời gian ở trong kí túc xá của [ctu](university)?
+    - Tôi quan tâm đến những ưu đãi đặc biệt cho sinh viên nước ngoài ở trong kí túc xá tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về các loại phòng và mức giá ở trong kí túc xá của [ctu](university).
+    - Có các quy định cụ thể nào về an ninh và an toàn trong kí túc xá của trường [Đại học Cần Thơ](university) không?
+    - Làm thế nào để tôi có thể kiểm tra tình trạng phòng trống và đặt chỗ trong kí túc xá tại [ctu](university)?
+    - Tôi muốn biết về tiện ích và dịch vụ hỗ trợ có sẵn trong kí túc xá của trường [Đại học Cần Thơ](university).
+    - Có các chương trình ưu đãi hay giảm giá nào khi ở trong kí túc xá của [ctu](university) không?
+    - Làm thế nào để tôi có thể liên hệ với bộ phận quản lý kí túc xá tại [Đại học Cần Thơ](university)?
+    - Tôi muốn biết về các điều kiện và quy định liên quan đến việc hủy đặt chỗ trong kí túc xá của [ctu](university).
+    - Cho tôi biết về các quy tắc và yêu cầu về sinh hoạt trong kí túc xá của trường [Đại học Cần Thơ](university).
+    - Có các phương thức thanh toán nào được chấp nhận khi ở trong kí túc xá tại [ctu](university)?
+    - Làm thế nào để tôi có thể đăng ký và thay đổi thông tin đặt chỗ trong kí túc xá của [Đại học Cần Thơ](university)?
+    - Tôi quan tâm đến việc đặt phòng dài hạn trong kí túc xá tại [ctu](university), có thông tin gì về điều này không?
+    - Bạn có thể chỉ cho tôi biết về các chính sách và quy định về việc ở trong kí túc xá của [Đại học Cần Thơ](university) không?
+    - Làm thế nào để tôi có thể kiểm tra thông tin về kí túc xá trên trang web của [ctu](university)?
+    - Tôi muốn tìm hiểu về chính sách hủy đặt phòng và quay lại kí túc xá của trường [Đại học Cần Thơ](university).
+    - Làm thế nào để tôi có thể thay đổi loại phòng ở trong kí túc xá của [ctu](university)?
+    - Tôi quan tâm đến các dự án xã hội hoặc sự kiện cộng đồng được tổ chức trong kí túc xá của trường [Đại học Cần Thơ](university).
+    - Bạn có thông tin về việc đăng ký ở kí túc xá cho sinh viên nghèo tại [ctu](university) không?
+    - Làm thế nào để tôi có thể kiểm tra và đánh giá phản hồi từ sinh viên đã từng ở trong kí túc xá tại [Đại học Cần Thơ](university)?
+    - Tôi muốn biết về các hoạt động văn hóa và giao lưu được tổ chức trong kí túc xá của [ctu](university).
+    - Tôi quan tâm đến an ninh trong kí túc xá của trường [Đại học Cần Thơ](university).
+    - Bạn có thể cho tôi biết về các tiện ích có sẵn trong khu kí túc xá không?
+    - Làm thế nào để đăng ký ở kí túc xá của trường [ctu](university)?
+    - Có chương trình ưu đãi hoặc giảm giá nào cho sinh viên ở kí túc xá không?
+    - Tôi muốn biết về quy tắc và hướng dẫn sử dụng kí túc xá của trường [Đại học Cần Thơ](university).
+    - Bạn có thể mô tả về môi trường sống và cộng đồng trong kí túc xá không?
+    - Làm thế nào để liên hệ với quản lý kí túc xá tại trường [ctu](university)?
+    - Có những sự kiện xã hội hoặc hoạt động nào được tổ chức trong kí túc xá của trường [Đại học Cần Thơ](university)?
+    - Bạn có thể cung cấp thông tin về chính sách vệ sinh và quy định trong kí túc xá không?
+    - Tôi muốn biết về các tiện ích gần kí túc xá của trường [ctu](university).
+    - Làm thế nào để tìm hiểu về tình trạng phòng trống và đặt chỗ ở kí túc xá của trường [Đại học Cần Thơ](university)?
+    - Có những điều cần lưu ý khi đăng ký ở kí túc xá của trường [ctu](university) không?
+    - Tôi muốn biết về chính sách hủy đặt phòng và hoàn trả phí ở kí túc xá của trường [Đại học Cần Thơ](university).
+    - Bạn có thể mô tả về quy tắc an toàn và an ninh tại kí túc xá không?
+    - Làm thế nào để đánh giá và phản hồi về trải nghiệm sống ở kí túc xá của trường [ctu](university)?
+    - Bạn có thể giới thiệu về môi trường học tập và sự tương tác xã hội trong kí túc xá của [trường đhct](university) không?
+    - Có những tiện ích đặc biệt nào cho sinh viên ở kí túc xá của [trường đhct](university)?
+    - Làm thế nào để đánh giá nhu cầu điện và nước trong kí túc xá của [trường đhct](university)?
+    - Tôi muốn tìm hiểu về chính sách an toàn và biện pháp phòng ngừa tại kí túc xá của trường [ctu](university).
+    - Bạn có thể chia sẻ về các dự án nghiên cứu hoặc hội thảo do cư dân kí túc xá tổ chức tại trường [CTU](university) không?
+    - Làm thế nào để xác nhận việc đăng ký và nhận phòng ở kí túc xá của [trường đhct](university)?
+    - Tôi muốn biết về cơ sở vật chất và trang thiết bị của kí túc xá tại [trường đhct](university).
+    - Bạn có thể hướng dẫn về chính sách thay đổi phòng và việc chuyển phòng ở kí túc xá không?
+    - Có các hoạt động ngoại khóa nào được tổ chức tại kí túc xá của trường [đại học ct](university) không?
+    - Làm thế nào để đăng ký nghỉ hè hoặc kỳ nghỉ lễ ở kí túc xá của trường [đại học CT](university)?
+    - Tôi muốn biết về cách hỗ trợ và giao tiếp với quản lý kí túc xá tại trường [cần thơ](university).
+    - Bạn có thể cung cấp thông tin về chính sách tái đào tạo và nâng cấp cơ sở vật chất trong kí túc xá không?
+    - Có những dự án cộng đồng nào mà cư dân kí túc xá thường tham gia tại [trường đhct](university)?
+    - Làm thế nào để tìm hiểu về các cơ hội việc làm và thực tập từ kí túc xá của trường [cần thơ ctu](university)?
+    - Tôi muốn biết về chính sách và quy định về tiếng ồn và giờ giấc tại kí túc xá của trường [Đại học Cần Thơ](university).
+
+
+
+- intent: facilities
+  examples: |
+    - Trường [Đại học Cần Thơ](university) đã đầu tư vào cơ sở vật chất đến mức nào? Hãy cho tôi biết những nét nổi bật.
+    - Tưởng tượng rằng bạn đang bước vào một phòng học ở [Đại học Cần Thơ](university). Mô tả cảm giác và những thứ bạn thấy.
+    - Tôi muốn biết về những không gian sáng tạo tại trường [Đại học Cần Thơ](university). Có điều gì đặc biệt ở đó?
+    - Trường đã áp dụng công nghệ vào việc giảng dạy và học tập như thế nào?
+    - Hãy tưởng tượng rằng bạn đang tham gia một buổi học tại trường [Đại học Cần Thơ](university). Sự hiện đại và sáng tạo xuất hiện ở đâu?
+    - Mô tả một phòng học hiện đại tại trường [dhct](university) như thế nào?
+    - Bạn có thể kể về một trải nghiệm học tập sử dụng công nghệ tại trường [ctu](university) không?
+    - Nếu trường [Đại học Cần Thơ](university) là một quần áo, bạn sẽ mô tả nó như thế nào để thể hiện cơ sở vật chất?
+    - Một ngày học tại trường [Đại học ct](university) bao gồm việc sử dụng những trang thiết bị nào?
+    - Bạn đã từng nghe về không gian học tập độc đáo nào tại trường mà bạn muốn chia sẻ?
+    - Cơ sở vật chất trường [Đại học Cần Thơ](university) như thế nào
+    - Trường [Đại học Cần Thơ](university) đã đầu tư vào cơ sở vật chất đến mức nào? Hãy cho tôi biết những nét nổi bật.
+    - Hãy cho tôi biết về trang thiết bị và công nghệ giảng dạy tại trường [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các trung tâm học thuật và phòng thí nghiệm của trường [Đại học ct](university).
+    - Cơ sở vật chất của trường [Đại học Cần Thơ](university) có đáp ứng đủ nhu cầu học tập của sinh viên không?
+    - Cho tôi thông tin về cơ sở vật chất và tiện nghi tại trường [Đại học Cần Thơ](university) cho sinh viên nước ngoài.
+    - Hãy cho tôi biết về cơ sở vật chất và tiện ích của trường [Đại học CT](university) dành cho sinh viên ngành kỹ thuật.
+    - Hãy miêu tả về cơ sở vật chất và dịch vụ hỗ trợ cho sinh viên tại trường [Đại học Cần Thơ](university).
+    - Cơ sở vật chất trường ra sao.
+    - Cơ sở vật chất sơ bộ của [ctu](university) như thế nào
+    - Hãy miêu tả về môi trường sống và học tập của trường [Đại học Cần Thơ](university) cho sinh viên ngoại tỉnh.
+    - Cho tôi biết sơ bộ về các phòng học, phòng thí nghiệm và cơ sở vật chất khác tại trường 
+    - Cho tôi biết về các phòng học, phòng thí nghiệm và cơ sở vật chất khác tại trường 
+    - Tôi cần biết chi tiết về trang thiết bị và cơ sở vật chất hiện có tại trường 
+    - Hãy đưa ra mô tả về các cơ sở vật chất, phòng học và phòng thí nghiệm của trường 
+    - Xin vui lòng mô tả về cơ sở vật chất và tiện nghi tại trường [Đại học cần thơ](university).
+    - Tôi quan tâm về cơ sở vật chất của trường , có thể cho tôi biết thông tin chi tiết  
+    - Tôi đang muốn tìm hiểu về các phòng thí nghiệm, trung tâm nghiên cứu và cơ sở vật chất tại trường
+    - Cho tôi thông tin về cơ sở vật chất và trang thiết bị tại trường 
+    - Thông tin về cơ sở vật chất trường ra sao? Tôi quan tâm đến khu vực sinh hoạt chung và nhà ăn của trường.
+    - Cơ sở vật chất trường như thế nào? Tôi muốn biết về phòng học và các tiện ích trong khuôn viên trường.
+    - Cơ sở vật chất trường ctu như thế nào? Tôi quan tâm đến khu vực thư viện và phòng thực hành của trường.
+    - Tôi muốn biết về các trung tâm học thuật và nghiên cứu tại trường. Có những tiện ích và cơ sở vật chất đáp ứng cho nghiên cứu khoa học không?
+    - Cho tôi biết thông tin về cơ sở vật chất và tiện nghi tại trường. Tôi quan tâm đến khu vực thư viện và phòng học của trường.
+    - Tôi muốn tìm hiểu về các khu vực sinh hoạt chung và nhà ăn tại trường. Bạn có thể mô tả về các cơ sở vật chất dành cho sinh viên không? 
+    - Nếu trường [Đại học Cần Thơ](university) là một bức tranh, bạn sẽ mô tả những đường nét chính như thế nào để thể hiện cơ sở vật chất?
+    - Mô tả một khuôn viên sân trường tại [ctu](university) trong một ngày nắng.
+    - Bạn có thể miêu tả một phòng lab khoa học tại trường [Đại học Cần Thơ](university) như thế nào?
+    - Nếu bạn là một du khách ghé thăm [ctu](university), điều gì sẽ gây ấn tượng nhất với bạn về cơ sở vật chất?
+    - Hãy nêu rõ những dự án nghiên cứu hay các không gian sáng tạo mà sinh viên có thể truy cập tại trường [Đại học Cần Thơ](university).
+    - Bạn đã từng tham gia vào một sự kiện nào tại những không gian đa chức năng của [ctu](university) chưa?
+    - Nếu trường [Đại học Cần Thơ](university) là một cây cầu, điểm đặc biệt nào sẽ kết nối sinh viên với cơ sở vật chất?
+    - Mô tả một không gian học tập ngoại ô tại [ctu](university).
+    - Bạn có thể tận hưởng những hoạt động nào tại các phòng thể dục và tập luyện của trường [Đại học Cần Thơ](university)?
+    - Nếu trường [ctu](university) là một bức tranh đen trắng, những chi tiết nổi bật nhất về cơ sở vật chất sẽ là gì?
+    - Hãy kể về một trải nghiệm đặc biệt khi sử dụng thiết bị công nghệ trong quá trình học tập tại [Đại học Cần Thơ](university).
+    - Bạn có thể mô tả một không gian học tập ngoại ô tại [ctu](university) như thế nào để làm cho nó trở nên độc đáo?
+    - Nếu bạn là một nhà nghiên cứu, bạn sẽ ưu tiên sử dụng những phòng lab hay tiện ích nghiên cứu nào tại [Đại học Cần Thơ](university)?
+    - Hãy kể về một ngày trong một phòng học hiện đại tại [ctu](university) và những công nghệ đang được sử dụng.
+    - Nếu trường [Đại học Cần Thơ](university) là một cuộc phiêu lưu, điều gì sẽ làm cho hành trình này đặc sắc với cơ sở vật chất?
+    - Bạn đã từng tham gia vào những dự án nghệ thuật hoặc sáng tạo sử dụng cơ sở vật chất tại [ctu](university) không?
+    - Hãy tưởng tượng rằng bạn đang tham gia một lớp học ngoại ngữ tại [Đại học Cần Thơ](university). Cơ sở vật chất nào làm tăng trải nghiệm học tập của bạn?
+    - Nếu bạn là một nhà văn, bạn sẽ sử dụng những từ ngữ nào để mô tả không khí trong một thư viện tại [ctu](university)?
+    - Hãy tận hưởng một ngày nghỉ tại các không gian xanh và hồ nước trong khuôn viên của [Đại học Cần Thơ](university). Bạn sẽ có cảm nhận như thế nào?
+    - Bạn có thể mô tả những không gian sáng tạo mà sinh viên có thể sử dụng để phát triển ý tưởng và dự án của họ tại [ctu](university) 
+    - Tôi muốn biết về những phòng lab tiên tiến và cơ sở vật chất nghiên cứu tại [Đại học Cần Thơ](university).
+    - Làm thế nào cơ sở vật chất tại [ctu](university) hỗ trợ sinh viên trong việc thực hiện các dự án nghiên cứu?
+    - Bạn có thể mô tả không khí và trang thiết bị trong một phòng học sử dụng công nghệ tại [Đại học Cần Thơ](university) không?
+    - Nếu tôi muốn tham gia vào các hoạt động sáng tạo và startup tại [ctu](university), những cơ sở vật chất nào có sẵn cho tôi?
+    - Hãy kể về các tiện ích và phòng học đa chức năng mà sinh viên có thể sử dụng tại [Đại học Cần Thơ](university).
+    - Trường [ctu](university) có những cơ sở vật chất nào đặc biệt được thiết kế cho sinh viên nghệ thuật và thiết kế?
+    - Nếu tôi muốn tham gia vào các hoạt động thể thao tại [Đại học Cần Thơ](university), những cơ sở vật chất thể dục và thể thao có sẵn là gì?
+    - Mô tả những khu vực đặc biệt trong thư viện tại [ctu](university) và cách chúng hỗ trợ nhu cầu nghiên cứu của sinh viên.
+    - Bạn có thể mô tả những cơ sở vật chất nổi bật của trường [Đại học Cần Thơ](university) liên quan đến ngành khoa học xã hội không?
+    - Làm thế nào cơ sở vật chất tại [ctu](university) đáp ứng và hỗ trợ cho sinh viên nghiên cứu trong lĩnh vực công nghệ thông tin?
+    - Nếu tôi muốn tự do sáng tạo và thử nghiệm các ý tưởng của mình, có những không gian nào tại [Đại học Cần Thơ](university) dành cho tôi?
+    - Hãy tả những cơ sở vật chất hiện đại mà sinh viên ngành y có thể sử dụng tại [ctu](university).
+    - Trường [Đại học Cần Thơ](university) có những khu vực công cộng nào mà sinh viên thường sử dụng để học tập và làm việc nhóm?
+    - Làm thế nào cơ sở vật chất tại [ctu](university) hỗ trợ sinh viên trong việc phát triển kỹ năng ngoại ngữ?
+    - Bạn có thể mô tả những không gian đặc biệt tại trường [Đại học Cần Thơ](university) dành cho sinh viên học ngành kinh doanh không?
+    - Nếu tôi muốn tham gia vào các dự án nghiên cứu về môi trường tại [ctu](university), những cơ sở vật chất nào sẽ hữu ích cho tôi?
+    - Hãy mô tả một phòng lab khoa học xã hội tại [Đại học Cần Thơ](university) và cách nó đóng góp vào việc nghiên cứu và giảng dạy.
+    - Nếu tôi muốn thực hiện các dự án nghiên cứu trong lĩnh vực y học và sinh học tại [ctu](university), có những phòng lab nào sẽ phục vụ tốt cho mục đích này?
+    - Mô tả những không gian sáng tạo tại [Đại học Cần Thơ](university) mà sinh viên có thể sử dụng để phát triển sản phẩm và ứng dụng công nghệ.
+    - Bạn có thể kể về những cơ sở vật chất và phòng học dành cho sinh viên ngành nghệ thuật kỹ thuật số tại [ctu](university) không?
+    - Làm thế nào trường [Đại học Cần Thơ](university) đảm bảo rằng sinh viên có đủ trang thiết bị và nguồn lực cho các dự án nghiên cứu cá nhân?
+    - Hãy mô tả những phòng học và trang thiết bị mà sinh viên ngành công nghiệp thực phẩm có thể sử dụng tại [ctu](university).
+    - Nếu tôi là sinh viên ngành nông học tại [Đại học Cần Thơ](university), có những cơ sở vật chất nào hỗ trợ cho việc nghiên cứu và thực hành của tôi?
+    - Bạn có thể nói về cách cơ sở vật chất tại [ctu](university) hỗ trợ sinh viên ngành kỹ thuật môi trường không?
+    - Nếu tôi là sinh viên ngành kinh doanh quốc tế tại [Đại học Cần Thơ](university), có những không gian làm việc và học tập chuyên biệt nào dành cho tôi?
+    - Hãy mô tả một trải nghiệm sử dụng các phòng lab công nghệ thông tin tại [ctu](university) và cách chúng hỗ trợ việc học và nghiên cứu.
+    - Tôi muốn biết về các cơ sở vật chất hỗ trợ cho sinh viên ngành nghệ thuật kịch và điện ảnh tại [Đại học Cần Thơ](university).
+    - Trường [dhct](university) có những phòng học đa chức năng nào và tiện ích cho sinh viên ngành quản lý không?
+    - Bạn có thể chia sẻ về các trung tâm hỗ trợ học tập và nghiên cứu của trường [ctu](university) không?
+    - Có những dự án nghiên cứu đặc sắc nào mà sinh viên có thể tham gia tại [Đại học Cần Thơ](university)?
+    - Tôi quan tâm đến các cơ sở vật chất hỗ trợ cho sinh viên ngành ngôn ngữ học và văn hóa, bạn có thể mô tả chúng được không?
+    - Bạn có thể giới thiệu về các phòng học sáng tạo và không gian học tập linh hoạt tại [Đại học Cần Thơ](university) không?
+    - Hãy tư duy về một buổi thực hành trong phòng lab tại [dhct](university) và mô tả cảm giác của sinh viên khi tham gia.
+    - Trường có cung cấp các dịch vụ và cơ sở vật chất nào để hỗ trợ sinh viên về khả năng nghiên cứu và sáng tạo?
+    - Bạn có thể mô tả về các cơ sở vật chất dành cho sinh viên ngành khoa học máy tính và trí tuệ nhân tạo không?
+    - Tôi muốn biết về các phòng học hiện đại và không gian làm việc cho sinh viên ngành kỹ thuật điện tại [ctu](university).
+    - Có những phòng thí nghiệm đặc biệt nào cho sinh viên ngành vật lý tại [Đại học Cần Thơ](university)?
+    - Bạn có thể nói về các cơ sở vật chất và trang thiết bị cho sinh viên ngành y sinh tại trường [dhct](university) không?
+    - Hãy tư duy về một buổi thực hành trong phòng lab tại [dhct](university) và mô tả cảm giác của sinh viên khi tham gia.
+    - Trường có cung cấp các dịch vụ và cơ sở vật chất nào để hỗ trợ sinh viên về khả năng nghiên cứu và sáng tạo?
+    - Bạn có thể mô tả về các cơ sở vật chất dành cho sinh viên ngành khoa học máy tính và trí tuệ nhân tạo không?
+    - Tôi muốn biết về các phòng học hiện đại và không gian làm việc cho sinh viên ngành kỹ thuật điện tại [ctu](university).
+    - Có những phòng thí nghiệm đặc biệt nào cho sinh viên ngành vật lý tại [Đại học Cần Thơ](university)?
+    - Bạn có thể nói về các cơ sở vật chất và trang thiết bị cho sinh viên ngành y sinh tại trường [dhct](university) không?
+    - Trường [ctu](university) có những tiện ích đặc biệt nào cho sinh viên ngành công nghệ thông tin?
+    - Hãy mô tả về không gian làm việc và trang thiết bị cho sinh viên ngành kỹ thuật máy tính tại [Đại học Cần Thơ](university).
+    - Bạn có thể chia sẻ về cơ sở vật chất và phòng học cho sinh viên ngành quản lý tại [dhct](university) không?
+    - Có những phòng thí nghiệm nào cho sinh viên ngành hóa học tại [ctu](university)?
+    - Hãy tư duy về một buổi thực hành trong phòng lab tại [dhct](university) và mô tả cảm giác của sinh viên khi tham gia.
+    - Trường có cung cấp các dịch vụ và cơ sở vật chất nào để hỗ trợ sinh viên về khả năng nghiên cứu và sáng tạo?
+    - Bạn có thể mô tả về các cơ sở vật chất dành cho sinh viên ngành khoa học máy tính và trí tuệ nhân tạo không?
+    - Tôi muốn biết về các phòng học hiện đại và không gian làm việc cho sinh viên ngành kỹ thuật điện tại [ctu](university).
+    - Có những phòng thí nghiệm đặc biệt nào cho sinh viên ngành vật lý tại [Đại học Cần Thơ](university)?
+    - Bạn có thể nói về các cơ sở vật chất và trang thiết bị cho sinh viên ngành y sinh tại trường [dhct](university) không?
+    - Trường [ctu](university) có những tiện ích đặc biệt nào cho sinh viên ngành công nghệ thông tin?
+    - Hãy mô tả về không gian làm việc và trang thiết bị cho sinh viên ngành kỹ thuật máy tính tại [Đại học Cần Thơ](university).
+    - Bạn có thể chia sẻ về cơ sở vật chất và phòng học cho sinh viên ngành quản lý tại [dhct](university) không?
+    - Có những phòng thí nghiệm nào cho sinh viên ngành công nghệ sinh học tại [ctu](university)?
+
+- intent: time
+  examples: |
+    - Trường có khoảng thời gian giới nghiêm nào hông?
+    - [ctu](university) sáng mở cửa mấy giờ và tối đóng cửa mấy giờ
+    - Thời gian mỗi tiết học tại [Đại học Cần Thơ](university) là bao nhiêu phút
+    - Trường có những khung giờ cố định cho việc sử dụng các cơ sở vật chất không?
+    - Hãy mô tả thời gian làm việc của thư viện tại [ctu](university) trong tuần.
+    - Làm thế nào để kiểm tra lịch trình học tập cá nhân tại [Đại học Cần Thơ](university)?
+    - Bạn có thể cung cấp thông tin về thời gian làm việc của văn phòng quản lý sinh viên tại [ctu](university) không?
+    - Có khung giờ cụ thể cho việc sử dụng phòng lab và thiết bị tại [Đại học Cần Thơ](university) không?
+    - Hãy nói về lịch trình làm việc của các cơ sở thể dục và thể thao tại [ctu](university).
+    - Có những thời điểm cụ thể nào trong năm mà trường [Đại học Cần Thơ](university) nghỉ lễ không?
+    - Trường [ctu](university) có thời gian làm việc linh hoạt cho sinh viên làm thêm không?
+    - Hãy mô tả lịch trình chuẩn của một sinh viên học toàn thời gian tại [Đại học Cần Thơ](university).
+    - Có thời gian cụ thể nào trong ngày là tốt nhất để liên hệ với giáo viên hoặc giáo sư tại [Đại học Cần Thơ](university)?
+    - Hãy mô tả thời gian mở cửa và đóng cửa của các quán ăn và cửa hàng trong khuôn viên trường [ctu](university).
+    - Có lịch trình cố định nào cho việc sử dụng các phòng học chung tại [Đại học Cần Thơ](university) không?
+    - Trường [Đại học Cần Thơ](university) mở cửa vào lúc mấy giờ mỗi ngày?
+    - Bạn có thể nói rõ về lịch trình mở cửa và đóng cửa của thư viện tại [ctu](university) không?
+    - Trường [ctu](university) mở cửa cho sinh viên từ thứ Hai đến thứ Bảy hay không?
+    - Làm thế nào để biết về lịch trình mở cửa của các phòng học tại [Đại học Cần Thơ](university)?
+    - Có những khu vực cụ thể nào trong khuôn viên trường [ctu](university) mà sinh viên có thể sử dụng sau giờ làm việc chính thức?
+    - Hãy mô tả lịch trình mở cửa của trung tâm hỗ trợ sinh viên tại [Đại học Cần Thơ](university).
+    - Bạn có thể cung cấp thông tin về thời gian mở cửa và đóng cửa của các quán ăn và cửa hàng trong khuôn viên trường [ctu](university) không?
+    - Làm thế nào để biết về lịch trình mở cửa của các phòng lab và thiết bị tại [Đại học Cần Thơ](university)?
+    - Có những khung giờ cụ thể nào cho việc sử dụng cơ sở thể dục và thể thao tại [ctu](university)?
+    - Mỗi tiết học tại [Đại học Cần Thơ](university) kéo dài bao lâu?
+    - Trường [ctu](university) có thời gian mỗi tiết học là bao nhiêu phút?
+    - Làm thế nào để biết thời lượng cụ thể cho mỗi buổi học tại [Đại học Cần Thơ](university)?
+    - Bạn có thể mô tả về thời gian mỗi buổi giảng và giảng viên giảng dạy tại [ctu](university) không?
+    - Trường [ctu](university) có áp dụng lịch trình cố định cho thời gian học mỗi ngày không?
+    - Hãy mô tả thời gian mỗi tiết học và cách nó được tổ chức tại [Đại học Cần Thơ](university).
+    - Làm thế nào để biết về lịch trình và thời lượng của các buổi thực hành và lab tại [ctu](university)?
+    - Bạn có thể cung cấp thông tin về lịch trình giảng dạy và thời lượng mỗi buổi học của sinh viên ngành nghệ thuật kịch nghệ không?
+    - Nếu tôi muốn biết thời gian mỗi buổi học trong ngành kinh doanh quốc tế tại [Đại học Cần Thơ](university), làm thế nào tôi có thể tra cứu?
+    - Trường [Đại học Cần Thơ](university) có thời gian bãi giữ xe là bao lâu mỗi ngày?
+    - Làm thế nào để biết về thời gian mở cửa và đóng cửa của bãi giữ xe tại [ctu](university)?
+    - Trung tâm học liệu tại [ctu](university) mở cửa vào những thời gian nào trong tuần?
+    - Bạn có thể cung cấp thông tin về thời gian mở cửa và đóng cửa của thư viện chính tại [Đại học Cần Thơ](university) không?
+    - Nếu tôi muốn đến trung tâm học liệu vào cuối tuần, lịch trình mở cửa như thế nào?
+    - Hãy mô tả thời gian mà sinh viên có thể sử dụng các nguồn tài nguyên và dịch vụ tại thư viện [ctu](university).
+    - Trường có những quy định cụ thể về thời gian sử dụng bãi giữ xe cho sinh viên không?
+    - Làm thế nào để kiểm tra thời gian mở cửa của các khu vực học liệu và thư viện tại [Đại học Cần Thơ](university)?
+    - Bạn có thể mô tả thời gian mà sinh viên có thể sử dụng các tiện ích và dịch vụ của trung tâm học liệu không?
+    - Nếu tôi muốn biết về thời gian mở cửa và đóng cửa của các cơ sở học liệu và thư viện phụ thuộc, làm thế nào tôi có thể tra cứu?
+    - Văn phòng trường [Đại học Cần Thơ](university) mở cửa vào lúc mấy giờ mỗi ngày?
+    - Bạn có thể mô tả về lịch trình làm việc của phòng công tác sinh viên tại [ctu](university) không?
+    - Phòng hành chínnh tại [ctu](university) mở cửa vào những thời gian nào trong tuần?
+    - Tòa nhà công nghệ cao tại [Đại học Cần Thơ](university) mở cửa cho sinh viên từ thứ Hai đến thứ Bảy hay không?
+    - Làm thế nào để biết về thời gian mở cửa và đóng cửa của văn phòng trường [ctu](university)?
+    - Nếu tôi muốn thăm phòng công tác sinh viên vào cuối tuần, lịch trình mở cửa như thế nào?
+    - Hãy mô tả thời gian mà sinh viên có thể đến phòng hành trình để giải quyết các vấn đề liên quan đến hành trình của họ.
+    - Tòa nhà công nghệ cao có giờ làm việc linh hoạt cho sinh viên làm thêm không?
+    - Có lịch trình cụ thể nào cho việc sử dụng dịch vụ của văn phòng trường tại [ctu](university) không?
+    - Bạn có thể mô tả lịch trình làm việc và giờ mở cửa của phòng công tác sinh viên trong kỳ nghỉ không?
+    - Nếu tôi muốn thăm tòa nhà công nghệ cao vào buổi tối, liệu nó có mở cửa không?
+    - Làm thế nào để kiểm tra lịch trình mở cửa của các cơ sở vật chất và văn phòng quản lý tại [Đại học Cần Thơ](university)?
+    - Phòng công tác sinh viên mở cửa vào lúc mấy giờ mỗi ngày?
+    - Văn phòng trường [ctu](university) hoạt động vào cuối tuần không?
+    - Tôi muốn biết lịch trình làm việc của phòng hành trình tại [Đại học Cần Thơ](university).
+    - Khi nào tòa nhà công nghệ cao tại [ctu](university) đóng cửa trong ngày?
+    - Bãi giữ xe mở cửa từ thứ Hai đến Chủ nhật hay chỉ mở trong giờ học?
+    - Làm thế nào để kiểm tra thời gian hoạt động của trung tâm học liệu vào cuối tuần tại [ctu](university)?
+    - Trường [Đại học Cần Thơ](university) mở cửa lúc nào và đóng cửa lúc nào trong ngày?
+    - Có những giờ giảng cố định hay linh hoạt tại [ctu](university)?
+    - Bạn có thể giải thích về thời gian làm việc của trung tâm hỗ trợ sinh viên tại [ctu](university) không?
+    - Trường [ctu](university) có tổ chức sự kiện vào những ngày nào trong tuần?
+    - Hãy mô tả lịch làm việc của thư viện tại [Đại học Cần Thơ](university) trong tuần.
+    - Thời gian làm việc của các cửa hàng trên khuôn viên trường [ctu](university) là bao nhiêu?
+    - Bạn có thể nói về lịch làm việc của các quán ăn và tiện ích khác tại [ctu](university) không?
+    - Trường [Đại học Cần Thơ](university) có những khung giờ linh hoạt cho việc sử dụng phòng học hay thư viện không?
+    - Có những buổi hướng dẫn và tư vấn nghề nghiệp diễn ra vào thời gian nào trong tuần tại [ctu](university)?
+    - Bạn có thể giới thiệu về lịch làm việc của các phòng lab và trung tâm nghiên cứu tại [Đại học Cần Thơ](university) không?
+    - Trường [ctu](university) có chính sách nào đối với việc nghỉ học không?
+    - Bạn có thể mô tả lịch làm việc của các trung tâm hỗ trợ nghề nghiệp và tư vấn tại [ctu](university)?
+    - Thời gian làm việc của các bảo tàng tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có cung cấp các khóa học buổi tối cho sinh viên không?
+    - Có những sự kiện quan trọng nào diễn ra vào cuối tuần tại [Đại học Cần Thơ](university)?
+    - Bạn có thể mô tả lịch làm việc của trung tâm thể dục và các hoạt động thể thao tại [ctu](university) không?
+    - Thời gian làm việc của các trung tâm học thuật tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có những buổi hướng dẫn cho sinh viên mới vào mỗi học kỳ không?
+    - Bạn có thể giải thích về lịch làm việc của trường [ctu](university) trong kỳ thi cuối kỳ không?
+    - Thời gian làm việc của trung tâm sáng tạo và khởi nghiệp tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có những buổi workshop nào dành cho sinh viên vào cuối tuần không?
+    - Bạn có thể nói về lịch làm việc của các phòng lab và trung tâm nghiên cứu khoa học tại [ctu](university) không?
+    - Thời gian làm việc của các phòng đọc sách và thư viện kỹ thuật tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có cung cấp khóa học hỗ trợ tiếng Anh cho sinh viên quốc tế vào buổi tối không?
+    - Bạn có thể giới thiệu về thời gian làm việc của các trung tâm hỗ trợ học thuật tại [ctu](university) không?
+    - Có những sự kiện nào diễn ra vào các ngày lễ tại [Đại học Cần Thơ](university)?
+    - Hãy mô tả lịch làm việc của các trung tâm nghệ thuật và văn hóa tại [ctu](university).
+    - Thời gian làm việc của các trung tâm chăm sóc sinh viên tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có những hoạt động ngoại khóa vào cuối tuần không?
+    - Bạn có thể nói về lịch làm việc của các trung tâm hỗ trợ nghiên cứu và phát triển sáng tạo tại [ctu](university) không?
+    - Thời gian làm việc của các trung tâm hỗ trợ tư pháp và nghệ thuật tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có những buổi thảo luận hay hội thảo vào buổi tối không?
+    - Bạn có thể giải thích về thời gian làm việc của các trung tâm hỗ trợ sức khỏe tâm thần tại [ctu](university) không?
+    - Có những sự kiện văn hóa nào diễn ra vào cuối tuần tại [Đại học Cần Thơ](university)?
+    - Hãy mô tả lịch làm việc của các trung tâm nghiên cứu xã hội và phát triển cộng đồng tại [ctu](university).
+    - Thời gian làm việc của các phòng học thực hành và trung tâm thực hành tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Trường [ctu](university) có những hoạt động ngoại khóa nào vào buổi tối không?
+    - Bạn có thể nói về lịch làm việc của các phòng lab và trung tâm nghiên cứu khoa học tại [ctu](university) không?
+    - Thời gian làm việc của các phòng đọc sách và thư viện kỹ thuật tại [Đại học Cần Thơ](university) là bao nhiêu?
+    - Bạn có thể nói về lịch làm việc của các trung tâm hỗ trợ sức khỏe tâm thần tại [ctu](university) trong thời gian thi cử không?
+    - Có những sự kiện văn hóa đặc biệt nào diễn ra vào các dịp cuối tuần tại [Đại học Cần Thơ](university)?
+    - Hãy mô tả lịch làm việc của các trung tâm nghiên cứu xã hội và phát triển cộng đồng tại [ctu](university) trong mùa thu và mùa đông.
+    - Thời gian làm việc của các phòng học thực hành và trung tâm thực hành tại [Đại học Cần Thơ](university) có sự điều chỉnh khi có sự kiện lớn không?
+    - Trường [ctu](university) có tổ chức các hoạt động ngoại khóa nào vào buổi tối trong các kỳ nghỉ hè không?
+    - Thời gian làm việc của các phòng đọc sách và thư viện kỹ thuật tại [Đại học Cần Thơ](university) có sự linh hoạt vào cuối tuần không?
+    - Bạn có thể giới thiệu về lịch làm việc của các phòng học đa phương tiện và khu vực sáng tạo tại [ctu](university) trong thời gian kỳ thi không?
+    - Thời gian làm việc của các cửa hàng sách và vật liệu học tại [Đại học Cần Thơ](university) có sự điều chỉnh để hỗ trợ sinh viên vào buổi tối không?
+    - Trường [ctu](university) có các buổi triển lãm nghệ thuật thường xuyên vào buổi tối không?
+    - Bạn có thể nói về lịch làm việc của các trung tâm hỗ trợ nghiên cứu và phát triển sáng tạo tại [ctu](university) trong thời kỳ thi cuối kỳ không?
+    - Thời gian làm việc của các quán ăn và khu vực ẩm thực tại [Đại học Cần Thơ](university) có sự linh hoạt vào cuối tuần không?
+
+- intent: benchmark
+  examples: |
+    - Xin thông tin về ngưỡng điểm đậu cho ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) trong kỳ thi trung học phổ thông vừa qua.
+    - Hãy chia sẻ ngưỡng điểm cần đạt để được nhận vào ngành [kĩ thuật phần mềm](majors) tại [Đại học Sư phạm Kỹ thuật TP.HCM](university) năm ngoái.
+    - Tôi quan tâm đến điểm chuẩn của [kĩ thuật phần mêm CLC](majors) tại [ctu](university) vào năm 2020. Xin vui lòng cung cấp thông tin chi tiết.
+    - Hỏi về ngưỡng điểm để học [mạng máy tính và truyền thông dữ liệu](majors) tại [Trường Đại học Cần Thơ](university) trong kỳ thi gần đây.
+    - Cho tôi biết điểm cần đạt để được nhận vào [truyền thông đa phương tiện](majors) tại [ctu](university) vào năm 2023.
+    - Mức điểm tối thiểu cho ngành [an toàn thông tin](majors) tại [dhct](university) vào năm 2020 là bao nhiêu?
+    - Hãy cung cấp thông tin về ngưỡng điểm đậu của ngành [công nghệ thông tin](majors) tại [CTU](university) vào năm 2019.
+    - Tôi muốn biết về mức điểm cần đạt để học ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong kỳ thi năm trước.
+    - Xin thông tin về ngưỡng điểm chuẩn cho ngành [hệ thồng thông tin](majors) tại [đhct](university) vào năm 2018.
+    - Cho tôi biết về điểm chuẩn của ngành [IT](majors) tại [Đại học CT](university) trong năm nay.
+    - Xin thông tin về ngưỡng điểm đậu của chương trình [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) trong kỳ thi gần đây.
+    - Tìm hiểu về mức điểm cần đạt để học [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) năm ngoái.
+    - Hỏi về ngưỡng điểm để nhận vào ngành [kỹ thuật phần mềm](majors) tại [Tctu](university) trong kỳ thi trung học phổ thông vừa qua.
+    - Cho tôi biết về điểm chuẩn của ngành [mạng máy tính và truyền thông dữ liệu](đhct) tại [Đại học UVW](university) năm 2022.
+    - Xin thông tin về ngưỡng điểm chuẩn của chương trình [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university) trong kỳ thi trung học mới nhất.
+    - Tôi quan tâm đến mức điểm tối thiểu cho ngành [công nghệ thông tin](majors) tại [Đại học Cần Thơ](university) vào năm 2021. Có thể cung cấp thông tin chi tiết không?
+    - Hỏi về ngưỡng điểm để học [công nghệ thông tin CLC](majors) tại [ctu](university) trong kỳ thi gần đây.
+    - Cho tôi biết về mức điểm cần đạt để nhận vào ngành [hệ thồng thông tin](majors) tại [CTU](university) năm 2020.
+    - Cho tôi biết về mức điểm cao nhất và thấp nhất của ngành [khoa học máy tính](majors) tại trường trong kỳ thi vừa qua.
+    - Tìm hiểu về xu hướng thay đổi ngưỡng điểm đậu cho ngành [kỹ thuật phần mềm](majors) tại trường 
+    - Xin thông tin về điểm trung bình của sinh viên đã nhận vào ngành [mạng máy tính và truyền thông dữ liệu](majors) tại trường
+    - Hỏi về những thay đổi gần đây về ngưỡng điểm đậu của chương trình [truyền thông đa phương tiện](majors) tại trường đại học.
+    - Cho tôi biết về mức điểm cao nhất và thấp nhất của ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university)
+    - Xin thông tin về sự biến động của điểm chuẩn cho ngành [công nghệ thông tin](majors) tại [trường Công nghệ thông tin và truyền thông](university) trong những năm gần đây.
+    - Tôi quan tâm đến những xu hướng mới về ngưỡng điểm đậu của chương trình [công nghệ thông tin CLC](majors) tại [trường Công nghệ thông tin và truyền thông](university)
+    - Hỏi về sự thay đổi của điểm chuẩn cho ngành [hệ thống thông tin](majors) tại [trường Công nghệ thông tin và truyền thông](university) trong khoảng thời gian gần đây.
+    - Cho tôi biết về những thay đổi đáng chú ý về ngưỡng điểm đậu của ngành [kỹ thuật phần mềm](majors) tại [trường Công nghệ thông tin và truyền thông](university)
+    - Tìm hiểu về những thay đổi đáng kể về ngưỡng điểm đậu của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university)
+    - Xin thông tin về sự biến động của điểm chuẩn cho ngành [mạng máy tính và truyền thông dữ liệu](majors)
+    - Hỏi về những chương trình học có điểm đậu cao nhất trong ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university)
+    - Cho tôi biết về xu hướng thay đổi của điểm chuẩn cho ngành [an toàn thông tin](majors)
+    - Xin thông tin về sự đánh giá và đánh giá lại ngưỡng điểm đậu của ngành [công nghệ thông tin](majors) tại [trường Công nghệ thông tin và truyền thông](university)
+    - Tôi quan tâm đến những chương trình học có điểm đậu thấp nhất và vẫn đảm bảo chất lượng trong ngành [công nghệ thông tin CLC](majors).
+    - Hỏi về những trường có sự ổn định cao về ngưỡng điểm đậu của ngành [hệ thồng thông tin](majors) trong thập kỷ gần đây.
+    - Cho tôi biết về các chính sách và thay đổi gần đây về điểm chuẩn của ngành [kỹ thuật phần mềm](majors) tại [trường Công nghệ thông tin và truyền thông](university)
+    - Tìm hiểu về những ảnh hưởng của công nghệ mới mẻ đối với ngưỡng điểm đậu của ngành [truyền thông đa phương tiện](majors) tại các trường đại học.
+    - Tìm hiểu về ngưỡng điểm đậu của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) trong năm nay.
+    - Cho tôi biết điểm cần đạt để được nhận vào ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university) năm ngoái.
+    - Hỏi về ngưỡng điểm để học [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) trong kỳ thi gần đây.
+    - Xin thông tin về ngưỡng điểm đậu của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university) vào năm 2023.
+    - Mức điểm tối thiểu cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) vào năm 2020 là bao nhiêu?
+    - Hãy cung cấp thông tin về ngưỡng điểm đậu của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) vào năm 2019.
+    - Tôi muốn biết về mức điểm cần đạt để học ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong kỳ thi năm trước.
+    - Xin thông tin về ngưỡng điểm chuẩn cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) vào năm 2018.
+    - Cho tôi biết về biểu đồ thay đổi điểm đậu của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) qua các năm.
+    - Xin thông tin chi tiết về điểm trung bình và điểm cao nhất của sinh viên vào ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về điểm chuẩn cần đạt để nhận vào ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) trong kỳ thi vừa qua.
+    - Hỏi về điểm đậu và điểm trung bình của sinh viên vào ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university) theo các đợt tuyển sinh.
+    - Cho tôi biết về những đặc điểm và thành tích nổi bật của sinh viên đỗ vào ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về mức điểm cao nhất và thấp nhất của sinh viên nhận vào ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong kỳ thi năm ngoái.
+    - Hỏi về sự biến động của điểm chuẩn và điểm đậu trong ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) qua từng đợt tuyển sinh.
+    - Cho tôi biết về các yếu tố quan trọng được Đại học Cần Thơ xem xét khi xét tuyển vào ngành [kỹ thuật phần mềm](majors) và cách chúng ảnh hưởng đến điểm đậu.
+    - Tìm hiểu về sự thay đổi của điểm đậu và điểm trung bình của sinh viên vào ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university) so với các trường khác.
+    - Xin thông tin về các thành tựu và dự án nghiên cứu gần đây có ảnh hưởng đến điểm đậu của ngành [khoa học máy tính](majors) tại [đhct](university).
+    - Hãy mô tả phân bố điểm đậu của sinh viên vào ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh gần đây.
+    - Xin chi tiết về điểm đặc trưng của những sinh viên xuất sắc nhất vào ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về sự đa dạng của điểm đậu và phổ điểm của sinh viên học ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về điểm trung bình và sự biến động của điểm đậu theo từng khối thi của sinh viên vào ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về điểm xuất sắc và điểm yếu nhất của sinh viên vào ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin chi tiết về sự thay đổi của điểm đậu và phổ điểm của sinh viên học ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university) qua các năm.
+    - Hỏi về sự biến động của điểm đậu và những ảnh hưởng của chính sách tuyển sinh đối với ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về các thành công đặc biệt và điểm đậu của sinh viên vào ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về sự biến động của điểm đậu và xu hướng của sinh viên vào ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về những điểm đặc trưng của sinh viên đỗ vào ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) và cách chúng đã phản ánh vào chất lượng đào tạo.
+    - Hỏi về điểm sàn và điểm chuẩn của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) trong năm tuyển sinh gần đây.
+    - Cho tôi biết về ngưỡng điểm sàn và điểm chuẩn cần đạt để vào ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university) năm nay.
+    - Xin thông tin về điểm sàn, điểm chuẩn và các yếu tố quyết định để vào ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về quy trình xác định điểm sàn và điểm chuẩn của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về điểm sàn và điểm chuẩn của ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) và cách chúng có thể thay đổi qua các năm.
+    - Xin thông tin về quy trình đánh giá điểm học bạ và cách nó ảnh hưởng đến điểm chuẩn của ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về cách điểm sàn và điểm chuẩn được xác định cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) và có sự thay đổi như thế nào.
+    - Cho tôi biết về ngưỡng điểm sàn và điểm chuẩn để vào ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university) và cách chúng được quy định.
+    - Xin thông tin về cách điểm sàn, điểm chuẩn và điểm học bạ ảnh hưởng đến quá trình tuyển sinh của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về ngưỡng điểm sàn và điểm chuẩn của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) và có những yếu tố nào được xem xét.
+    - Tìm hiểu về quy trình xác định và công bố điểm sàn, điểm chuẩn của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về cách Đại học Cần Thơ đánh giá điểm học bạ và ảnh hưởng của nó đến điểm chuẩn của ngành [kỹ thuật phần mềm](majors).
+    - Hỏi về sự biến động của điểm sàn và điểm chuẩn cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) qua các kỳ tuyển sinh.
+    - Cho tôi biết về những yếu tố quyết định và quy trình xác định điểm sàn, điểm chuẩn của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về cách điểm sàn, điểm chuẩn và điểm học bạ được ưu tiên trong quá trình tuyển sinh của ngành [an toàn thông tin](majors).
+    - Hỏi về sự thay đổi của điểm sàn và điểm chuẩn qua các năm tuyển sinh của ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về quy trình đánh giá điểm học bạ và cách nó ảnh hưởng đến điểm chuẩn của ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về ngưỡng điểm đậu cho ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) trong kỳ thi trung học phổ thông vừa qua.
+    - Xin thông tin về điểm chuẩn để được nhận vào ngành [kĩ thuật phần mềm](majors) tại [Đại học Cần Thơ](university) năm ngoái.
+    - Tôi quan tâm đến ngưỡng điểm của [kĩ thuật phần mềm CLC](majors) tại [ctu](university) vào năm 2020. Xin vui lòng cung cấp thông tin chi tiết.
+    - Hỏi về ngưỡng điểm để học [mạng máy tính và truyền thông dữ liệu](majors) tại [Trường Đại học Cần Thơ](university) trong kỳ thi gần đây.
+    - Cho tôi biết điểm cần đạt để được nhận vào [truyền thông đa phương tiện](majors) tại [ctu](university) vào năm 2023.
+    - Mức điểm tối thiểu cho ngành [an toàn thông tin](majors) tại [dhct](university) vào năm 2020 là bao nhiêu?
+    - Tôi quan tâm đến điểm chuẩn của [kỹ thuật máy tính](majors) tại [Đại học Cần Thơ](university) trong kỳ thi gần đây.
+    - Cho tôi biết điểm cần đạt để học [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) vào năm 2022.
+    - Hỏi về ngưỡng điểm chuẩn của [truyền thông đpt](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh vừa qua.
+    - Xin thông tin về điểm đậu của ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university) trong kỳ thi năm ngoái.
+    - Anh/chị có thể chia sẻ về ngưỡng điểm và các yếu tố xét tuyển quan trọng cho ngành [công nghệ thông tin](majors) tại [Đại học CT](university) không ạ?
+    - Hỏi về ngưỡng điểm và các tiêu chí đánh giá hồ sơ cho ngành [cntt](majors) tại [Trường đhct](university) trong kỳ tuyển sinh mới nhất.
+    - Cho em biết về quy trình xét tuyển và mức điểm cần đạt cho ngành [cntt](majors) tại [Đại học ctu](university) được không ạ?
+    - Xin thông tin chi tiết về điểm chuẩn và những phần quan trọng cần lưu ý khi đăng ký học [truyền thông đpt](majors) tại [Trường đhct](university).
+    - Hỏi về các tiêu chí đánh giá và ngưỡng điểm cho ngành [truyền thông đpt](majors) tại [Đại học Kinh tế Quốc dân](university) trong năm nay.
+    - Anh/chị có thể chia sẻ về mức điểm cần đạt và các bước quan trọng khi đăng ký học [khoa học máy tính](majors) tại [Đại học CT](university) không ạ?
+    - Hỏi về quy trình xét tuyển và ngưỡng điểm cho ngành [truyền thông đpt](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh gần đây.
+    - Cho em biết về các yêu cầu đặc biệt và điểm chuẩn cho ngành [truyền thông đpt](majors) tại [Trường đhct](university) được không ạ?
+    - Cho em xin thông tin chi tiết về tiêu chí xét tuyển và ngưỡng điểm cho ngành [truyền thông đpt](majors) tại [Đại học cần thơ](university) trong kỳ tuyển sinh mới nhất được không ạ?
+    - Anh/chị có thể mô tả quy trình đánh giá hồ sơ và điểm chuẩn cho ngành [cntt](majors) tại [Đại học Cần Thơ](university) không ạ?
+    - Xin thông tin về các tiêu chí và yếu tố quan trọng đối với ngành [truyền thông đpt](majors) tại [Đại học cần thơ](university) trong năm nay.
+    - Hỏi về những yêu cầu cụ thể và ngưỡng điểm của ngành [khoa học máy tính](majors) tại [Đại học CT](university) được không ạ?
+    - Anh/chị có thể chia sẻ về quy trình xét tuyển và mức điểm cần đạt cho ngành [cntt](majors) tại [Trường đhct](university) không ạ?
+    - Cho em biết về điểm chuẩn và các yếu tố xét tuyển quan trọng cho ngành [truyền thông đpt](majors) tại [Đại học cần thơ](university) được không ạ?
+    - Hỏi về các điều kiện và ngưỡng điểm của ngành [khoa học máy tính](majors) tại [Đại học ctu](university) trong kỳ tuyển sinh vừa qua.
+    - Cho em xin thông tin chi tiết về các tiêu chí và mức điểm của ngành [khoa học máy tính](majors) tại [Đại học cần thơ](university) trong năm nay được không ạ?
+    - Anh/chị có thể giải thích về cách [Đại học Công nghệ Thông tin](university) đánh giá hồ sơ và ngưỡng điểm cho ngành [khoa học máy tính](majors) không ạ?
+    - Hỏi về quy trình xét tuyển và các yếu tố quan trọng đánh giá trong ngành [truyền thông đpt](majors) tại [Đại học CT](university) được không ạ?
+    - Xin thông tin về tiêu chí xét tuyển và điểm chuẩn cho ngành [kỹ thuật phần mềm](majors) tại [Trường đhct](university) trong năm nay được không ạ?
+    - Cho em biết về những yêu cầu cụ thể và ngưỡng điểm của ngành [cntt](majors) tại [Đại học Cần Thơ](university) được không ạ?
+
+- intent: tuition
+  examples: |
+    - Cho tôi biết về mức học phí hàng năm của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về chi phí đào tạo cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các khoản phụ phí liên quan cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về chi phí học phí và những khoản phụ phí khác cho ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về chi phí đào tạo và các khoản phụ phí cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về mức học phí và các chi phí khác cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về mức học phí hàng năm của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về chi phí đào tạo và các khoản phụ phí cho ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và chi phí đào tạo của ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về chi phí học phí và các khoản phụ phí liên quan cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về chi phí đào tạo và các khoản phụ phí cho ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về mức học phí hàng năm của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về chi phí đào tạo và các khoản phụ phí cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các chi phí khác cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về chi phí đào tạo và mức học phí cần nộp cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về chi phí học phí và các khoản phụ phí liên quan cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về chi phí đào tạo và các khoản phụ phí cho ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về mức học phí hàng năm của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về chi phí đào tạo và các khoản phụ phí cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các chi phí khác cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về chi phí đào tạo và các khoản phụ phí cho ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về mức học phí và các chi phí khác cho ngành [khoa học máy tính](majors) tại [CTU](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [truyền thông đa phương tiện](majors) tại [ctu](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [truyền thông đa phương tiện](majors) tại [ctu](university).
+    - Hỏi về mức học phí và các khoản phụ phí cho ngành [hệ thống thông tin](majors) tại [CTU](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [kỹ thuật phần mềm](majors) tại [ctu](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [kỹ thuật phần mềm](majors) tại [ctu](university).
+    - Hỏi về chi phí đào tạo và các khoản phụ phí cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [CTU](university).
+    - Bạn có thể giải thích về chi phí học phí của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) không?
+    - Tôi muốn tìm hiểu về học phí và các chi phí khác của ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Có những khoản phí nào tôi cần biết?
+    - Cho tôi biết về chi phí học phí và các chi phí khác của ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi đang quan tâm đến chi phí học phí và các chi phí khác của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university). Bạn có thể cung cấp thông tin chi tiết không?
+    - Bạn có thể chia sẻ về chi phí học phí và các chi phí khác của ngành [công nghệ thông tin CLC](majors) tại [ctu](university) không?
+    - Tôi muốn hiểu rõ về chi phí học phí và các chi phí khác của ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Bạn có thể giới thiệu về chi phí học phí và các chi phí khác của ngành [kỹ thuật phần mềm](majors) tại [ctu](university) không?
+    - Cho tôi biết về chi phí học phí và các chi phí khác của ngành [truyền thông đa phương tiện](majors) tại [ctu](university).
+    - Tôi muốn tìm hiểu về chi phí học phí và các chi phí khác của ngành [kỹ thuật phần mềm](majors) tại [ctu](university). Có các ưu đãi hoặc hỗ trợ tài chính nào không?
+    - Bạn có thể cung cấp thông tin về chi phí học phí và các chi phí khác của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Tôi muốn biết về chi phí học phí và các chi phí khác của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university). Có những khoản chi phí bổ sung nào không?
+    - Cho tôi xin thông tin chi tiết về chi phí học phí và các chi phí khác của ngành [truyền thông đa phương tiện](majors) tại [ctu](university).
+    - Tôi quan tâm đến các chi phí học phí và chi phí liên quan đến ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university). Bạn có thể chia sẻ thông tin chi tiết không?
+    - Bạn có thể giới thiệu về chi phí học phí và các chi phí khác của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) không?
+    - Tôi muốn hiểu rõ về chi phí học phí và các chi phí khác của ngành [công nghệ thông tin CLC](majors) tại [ctu](university). Có những chính sách hỗ trợ tài chính nào áp dụng không?
+    - Cho tôi biết về chi phí học phí và các chi phí khác của ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university). Có những chi phí nào mà sinh viên thường quên không?
+    - Tôi quan tâm đến các chi phí học phí và chi phí liên quan đến ngành [kỹ thuật phần mềm](majors) tại [ctu](university). Bạn có thể chia sẻ thông tin chi tiết không?
+    - Bạn có thể giới thiệu về chi phí học phí và các chi phí khác của ngành [truyền thông đa phương tiện](majors) tại [ctu](university) không?
+    - Tôi muốn biết về chi phí học phí và các chi phí khác của ngành [kỹ thuật phần mềm](majors) tại [ctu](university). Có những chính sách hỗ trợ tài chính nào dành cho sinh viên mới không?
+    - Cho tôi xin thông tin về chi phí học phí và các chi phí khác của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university). Có những lợi ích nào khác ngoài học phí không?
+    - Bật mí về những chi phí khác ngoài học phí của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university). Có những trải nghiệm hay dịch vụ gì đặc sắc mà sinh viên thường không biết?
+    - Khám phá với tôi về sự độc đáo trong chi phí học phí của ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Có những ưu đãi đặc biệt nào không?
+    - Bạn có thể tư vấn về cách sinh viên có thể tiết kiệm chi phí khi theo học ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) không?
+    - Mở cửa về các khoản chi phí khác ngoài học phí của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university). Có những cơ hội nghề nghiệp hoặc sự kiện đặc biệt nào được tài trợ không?
+    - Bạn có thể chia sẻ những bí mật về chi phí học phí của ngành [công nghệ thông tin CLC](majors) tại [ctu](university) không? Có những phần quà hay ưu đãi nào đặc biệt cho sinh viên không?
+    - Tôi muốn đàm phán về cách các sinh viên có thể quản lý chi phí học phí và chi phí sinh hoạt hàng ngày khi theo học ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Bạn có thể giải mã những chi phí ẩn của ngành [kỹ thuật phần mềm](majors) tại [ctu](university) không? Có những đặc quyền nào mà sinh viên nên biết đến không?
+    - Kể chuyện về những cơ hội tài chính và ưu đãi đặc biệt khi theo học ngành [truyền thông đa phương tiện](majors) tại [ctu](university).
+    - Cho tôi biết về câu chuyện tài chính của sinh viên học ngành [kỹ thuật phần mềm](majors) tại [ctu](university). Có những hành trình đáng nhớ nào không?
+    - Bạn có thể nói lên về những cơ hội và chi phí độc đáo của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Hãy cho tôi biết về chi phí học phí của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến chi phí học phí và các chi phí khác của ngành [truyền thông đa phương tiện](majors) tại [ctu](university).
+    - Cho tôi xin thông tin chi tiết về chi phí học phí của ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Bạn có thể giới thiệu về chi phí học phí và các chi phí khác của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) không?
+    - Tôi muốn hiểu rõ về chi phí học phí và các chi phí khác của ngành [công nghệ thông tin CLC](majors) tại [ctu](university).
+    - Cho tôi biết về chi phí học phí và các chi phí khác của ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến chi phí học phí và các chi phí khác của ngành [kỹ thuật phần mềm](majors) tại [ctu](university).
+    - Bạn có thể giới thiệu về chi phí học phí và các chi phí khác của ngành [truyền thông đa phương tiện](majors) tại [ctu](university) không?
+    - Tôi muốn biết về chi phí học phí và các chi phí khác của ngành [kỹ thuật phần mềm](majors) tại [ctu](university).
+    - Bạn có thể cung cấp thông tin về chi phí học phí và các chi phí khác của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Giả sử tôi là một sinh viên đam mê ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university). Chi phí học phí và các chi phí khác có thể so sánh như thế nào với giá trị mà ngành này mang lại?
+    - Nếu tôi muốn đầu tư vào sự nghiệp trong [truyền thông đa phương tiện](majors) tại [ctu](university), chi phí học phí có phản ánh chất lượng giáo dục và cơ hội nghề nghiệp không?
+    - Có những ngóc ngách nào trong chi phí học phí của ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ] mà sinh viên thường ít chú ý?
+    - Nếu tôi là người yêu thích sự sáng tạo và đổi mới, chi phí học phí của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) có đồng nghĩa với việc tôi sẽ được tham gia vào các dự án sáng tạo không?  
+    - Cho tôi biết về mức học phí hàng năm của ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về chi phí đào tạo cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các khoản phụ phí liên quan cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về chi phí học phí và những khoản phụ phí khác cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí hàng năm của ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các khoản phụ phí cho ngành [thiết kế trang web](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về chi phí đào tạo và mức học phí cần nộp cho ngành [phân tích dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về chi phí học phí hàng năm của ngành [hệ thống máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các khoản phụ phí liên quan cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về chi phí đào tạo và những khoản phụ phí khác cho ngành [quản trị hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về mức học phí hàng năm của ngành [trí tuệ nhân tạo](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí và các khoản phụ phí cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về chi phí đào tạo và mức học phí cần nộp cho ngành [kĩ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về mức học phí hàng năm của ngành [mạng máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về chi phí học phí và các khoản phụ phí cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hỏi về mức học phí và các khoản phụ phí liên quan cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tìm hiểu về chi phí đào tạo và những khoản phụ phí khác cho ngành [công nghệ phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về mức học phí hàng năm của ngành [kỹ thuật máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin chi tiết về học phí và các khoản phụ phí cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Ngoài học phí cơ bản, liệu có những khoản phụ phí ẩn nào khác cần phải biết đối với ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university)?
+    - Tìm hiểu về chi phí thêm vào như phí thực tập hay phí dự án trong quá trình học [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về khoản phí bổ sung như chi phí sử dụng phòng máy tính cho ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Có thông tin phụ phí gì khác như chi phí thư viện hay chi phí phòng thí nghiệm cho ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university)?
+    - Tìm hiểu về những chi phí bổ sung như chi phí học phần nâng cao hay chi phí sử dụng phần mềm đặc biệt cho ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Xin thông tin về các khoản phí khác như chi phí tham gia các sự kiện chuyên ngành cho ngành [công nghệ thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Ngoài học phí, còn chi phí mở rộng nào khác cần xem xét khi học ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university)?
+    - Hỏi về phụ phí tăng cường như chi phí phòng thực hành hay chi phí tham gia các khóa đào tạo ngoại khóa cho ngành [mạng máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Có các chi phí bổ sung nào như chi phí sử dụng thiết bị đặc biệt trong quá trình học [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) không?
+    - Tìm hiểu về khoản phí mở rộng như chi phí tham gia các sự kiện khoa học công nghệ hay chi phí thiết bị cho ngành [kỹ thuật phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Có thông tin về các chi phí thêm như phí sử dụng phòng thí nghiệm đặc biệt hay chi phí dự án trong ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) không?
+
+- intent: curriculum
+  examples: |
+    - Cho tôi xem chương trình đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về kế hoạch học tập cho ngành [Khoa học Máy tính](majors) của [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về kế hoạch học tập của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cho biết những học phần thực tập hoặc thực hành có trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến kế hoạch học tập của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university). Bạn có thể chia sẻ thông tin không?
+    - Hãy cho tôi biết về chương trình đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Tôi đang cần tìm thông tin về kế hoạch học tập cho ngành [Khoa học Máy tính](majors) của trường [Đại học Cần Thơ](university).
+    - Xin bạn hãy cung cấp chi tiết về kế hoạch học tập của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Học phần thực tập hoặc thực hành nào được đưa vào chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university)?
+    - Cho tôi biết về kế hoạch học tập của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university) để tôi có cái nhìn tổng quan.
+    - chương trình đào tạo ngành [truyền thông đa phương tiện](majors) của trường [đại học cần thơ](university)
+    - kế hoạch học tập ngành [khoa học máy tính](majors) của trường [đại học cần thơ](university)
+    - kế hoạch học tập ngành [kỹ thuật phần mềm](majors) của trường [đại học cần thơ](university)
+    - Học phần thực tập hoặc thực hành nào được cung cấp trong chương trình đào tạo ngành [kỹ thuật phần mềm](majors) của [đại học cần thơ](university)
+    - kế hoạch học tập ngành [công nghệ thông tin](majors) của trường [đại học cần thơ](university)
+    - Cho tôi xem chương trình đào tạo của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về kế hoạch học tập cho ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về kế hoạch học tập của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cho biết những học phần thực tập hoặc thực hành có trong chương trình đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về các môn học chuyên sâu trong ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói cho tôi biết về các chuyên ngành trong chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về những môn học thực tập trong chương trình đào tạo của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về những dự án nghiên cứu trong ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế có trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về những môn học chuyên ngành trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến những dự án nghiên cứu mới nhất trong ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về các khóa học nâng cao trong chương trình đào tạo của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về chương trình đào tạo của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem kế hoạch học tập cho ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về kế hoạch học tập của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cho biết những học phần thực tập hoặc thực hành có trong chương trình đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về các môn học chuyên sâu trong ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói cho tôi biết về các chuyên ngành trong chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về những môn học thực tập trong chương trình đào tạo của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về những dự án nghiên cứu trong ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế có trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về những môn học chuyên ngành trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về các khóa học nâng cao trong chương trình đào tạo của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về kế hoạch học tập cho ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về kế hoạch học tập của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cho biết những học phần thực tập hoặc thực hành có trong chương trình đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về các môn học chuyên sâu trong ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói cho tôi biết về các chuyên ngành trong chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về những môn học thực tập trong chương trình đào tạo của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về những dự án nghiên cứu trong ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế có trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về những môn học chuyên ngành trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến những dự án nghiên cứu mới nhất trong ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về các khóa học nâng cao trong chương trình đào tạo của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ
+    - Cho tôi xem kế hoạch học tập của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về chương trình đào tạo cho ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về kế hoạch học tập của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cho biết những học phần thực tập hoặc thực hành có trong chương trình đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về các môn học chuyên sâu trong ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói cho tôi biết về các chuyên ngành trong chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về những môn học thực tập trong chương trình đào tạo của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về những dự án nghiên cứu trong ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế có trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về những môn học chuyên ngành trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến những dự án nghiên cứu mới nhất trong ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xin thông tin về kế hoạch học tập của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về các khóa học nâng cao trong chương trình đào tạo của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các môn học thực tế trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy cung cấp thông tin về chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem kế hoạch học tập của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi đang quan tâm đến nội dung chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ](university), bạn có thể chia sẻ thông tin chi tiết không?
+    - Cho tôi xem các môn học chuyên ngành trong kế hoạch đào tạo của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về những cơ hội thực tập và dự án nghiên cứu trong chương trình đào tạo của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cung cấp thông tin về các môn học mới nhất trong ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Tôi đang tìm hiểu về chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university), bạn có thể giúp tôi tìm hiểu thêm không?
+    - Cho tôi biết về các dự án nghiên cứu và hoạt động thực tế trong ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến những môn học liên quan đến mạng và truyền thông trong chương trình đào tạo của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Xin hãy nói về các chuyên ngành và hướng nghiên cứu trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hãy cho tôi xem các môn học thực tập phổ biến trong chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn tìm hiểu về các khóa học nâng cao và chương trình đào tạo sau đại học trong ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về các dự án và hoạt động nghiên cứu đang được thực hiện trong ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Hãy mô tả về kế hoạch học tập và cơ hội sự nghiệp sau khi tốt nghiệp ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Tôi đang tìm hiểu về chương trình đào tạo của ngành [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ], có thể cung cấp thông tin chi tiết về môi trường học tập không?
+    - Cho tôi xem các môn học chuyên ngành và học phần bắt buộc trong kế hoạch đào tạo của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến các dự án và hợp tác nghiên cứu giữa sinh viên và doanh nghiệp trong ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về những môn học chuyên sâu và các giảng viên nổi tiếng trong chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem chương trình đào tạo của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ], và nếu có, hãy chia sẻ về các sự kiện và hoạt động ngoại khóa liên quan.
+    - Tôi muốn biết về các môn học thực tập và dự án đặc biệt trong kế hoạch đào tạo của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Tôi đang quan tâm đến các môn học về quản lý dự án trong chương trình đào tạo của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về các cơ sở vật chất và phòng thí nghiệm hỗ trợ cho sinh viên ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi quan tâm đến các chương trình trao đổi quốc tế và cơ hội du học trong khuôn khổ ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Hãy nói về những dự án công nghệ mới và xu hướng trong lĩnh vực [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn biết về những môn học về trí tuệ nhân tạo và machine learning trong chương trình đào tạo của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi xem các dự án nghiên cứu có sự tham gia của sinh viên trong ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hãy chia sẻ về những sự kiện và hội thảo chuyên ngành trong lĩnh vực [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ].
+    - Tôi quan tâm đến cơ hội tham gia các dự án xã hội và các hoạt động từ thiện của sinh viên trong ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về các môn học về quy trình phần mềm và kiểm thử trong chương trình đào tạo của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Hãy mô tả về sự đa dạng của các chuyên ngành và lĩnh vực nghiên cứu trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ].
+    - Tôi muốn biết về những dự án khởi nghiệp do sinh viên trong ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) thực hiện.
+    - Hãy nói về môi trường học tập và nghiên cứu của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] so với các trường đại học khác.
+    - Tôi quan tâm đến cơ hội thực tập tại các doanh nghiệp nổi tiếng trong lĩnh vực [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về các dự án và sự hợp tác quốc tế trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ].
+    - Hãy chia sẻ về các sự kiện văn hóa và hoạt động giải trí của sinh viên trong chương trình đào tạo [Công nghệ Thông tin](majors) tại [Đại học Cần Thơ].
+    - Tôi muốn biết về những chương trình đào tạo sau đại học và cơ hội nghề nghiệp trong lĩnh vực [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university).
+    - Hãy mô tả về cơ sở vật chất và phòng lab hiện đại dành cho sinh viên ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ].
+    - Tôi quan tâm đến những hoạt động ngoại khóa và các câu lạc bộ sinh viên liên quan đến ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university).
+    - Cho tôi biết về những dự án nghiên cứu và ứng dụng mới nhất trong lĩnh vực [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ].
+    - Hãy chia sẻ về các chương trình hỗ trợ sinh viên trong việc thực tập và tìm kiếm việc làm sau khi tốt nghiệp trong ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university).
+
+
+- intent: criterias
+  examples: |
+    - Tôi muốn biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university) trong năm học mới.
+    - Cho tôi xem chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong năm nay.
+    - Hãy cung cấp thông tin về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Tôi quan tâm đến chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô của lớp học trong chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ].
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh sắp tới.
+    - Tôi muốn tìm hiểu về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Hãy nói về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm mới.
+    - Tôi muốn biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Cho tôi xem chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy chia sẻ với tôi về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi biết về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Cho tôi xem chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy chia sẻ với tôi về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi biết về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Cho tôi xem chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy chia sẻ với tôi về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi biết về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Cho tôi xem chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy cung cấp thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi quan tâm đến thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn đặt câu hỏi về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên cho ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university) trong năm học sắp tới.
+    - Cho tôi xem liệu có bao nhiêu sinh viên dự kiến được nhận vào chương trình đào tạo [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh mới.
+    - Hãy cung cấp thông tin chi tiết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình [An toàn Thông tin](majors) tại [Đại học Cần Thơ].
+    - Xin hãy giải thích về chỉ tiêu tuyển sinh và quy mô lớp học cho ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi quan tâm đến số liệu về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi biết về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Hãy chia sẻ thông tin về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy nói về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn tìm hiểu về dự kiến số lượng sinh viên và chỉ tiêu tuyển sinh của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi biết về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Hãy cung cấp thông tin về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Tôi quan tâm đến số liệu về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Cho tôi biết về dự kiến số lượng sinh viên và quy mô lớp học của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy chia sẻ thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Tôi quan tâm đến quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Hãy cung cấp thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Hãy nói về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi muốn tìm hiểu về số liệu về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ] trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh sắp tới.
+    - Hãy chia sẻ thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Tôi quan tâm đến số liệu về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ] trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ] trong năm học tiếp theo.
+    - Cho tôi biết về mục tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh sắp tới.
+    - Hãy chia sẻ thông tin về chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university) trong năm học mới.
+    - Tôi muốn tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của chương trình [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo.
+    - Hãy chia sẻ thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh sắp tới.
+    - Tôi quan tâm đến quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university) trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh sắp tới.
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo.
+    - Tôi muốn tìm hiểu về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo.
+    - Hãy chia sẻ thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh sắp tới.
+    - Tôi quan tâm đến quy mô lớp học và chỉ tiêu tuyển sinh của chương trình đào tạo ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university) trong năm học mới.
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh sắp tới.
+    - Hãy chia sẻ thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo.
+    - Tôi quan tâm đến chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university) trong kỳ tuyển sinh gần đây nhất.
+    - Cho tôi xem chỉ tiêu tuyển sinh và quy mô lớp học của chương trình đào tạo ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo.
+    - Tôi muốn hiểu rõ về chỉ tiêu tuyển sinh và dự kiến số lượng sinh viên cho chương trình [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong năm học sắp tới. Có những tiêu chí nào quan trọng mà sinh viên cần biết?
+    - Cho tôi xin thông tin chi tiết về chỉ tiêu tuyển sinh và quy mô lớp học của ngành [Hệ thống Thông tin](majors) tại [Đại học Cần Thơ](university). Ngoài ra, có các cơ hội học phần đặc biệt nào không?
+    - Tôi đang tìm hiểu về kế hoạch học tập cho ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university). Bạn có thể mô tả về các dự án thực tế và cơ hội nghề nghiệp sau khi tốt nghiệp không?
+    - Hãy chia sẻ thông tin về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo. Có những khóa học đặc sắc nào mà sinh viên nên chú ý?
+    - Tôi quan tâm đến quy mô lớp học và chỉ tiêu tuyển sinh của chương trình [Kỹ thuật Phần mềm](majors) tại [Đại học Cần Thơ](university). Ngoài những học phần chính, có những cơ hội thực tập nào đáng chú ý?
+    - Cho tôi biết về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [Mạng Máy tính và Truyền thông Dữ liệu](majors) tại [Đại học Cần Thơ](university) trong năm học mới. Có các dự án nghiên cứu gì đang diễn ra?
+    - Tôi quan tâm đến dự án và nghiên cứu trong ngành [Khoa học Máy tính](majors) tại [Đại học Cần Thơ](university). Có những cơ hội nào để sinh viên tham gia vào các hoạt động này?
+    - Hãy nói về chỉ tiêu tuyển sinh và quy mô lớp học của chương trình [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university) trong năm học tiếp theo. Ngoài ra, có các chương trình hợp tác với doanh nghiệp không?
+    - Cho tôi biết về cơ hội thực tập và dự án thực tế trong chương trình [Công nghệ Thông tin CLC](majors) tại [Đại học Cần Thơ](university). Có những đối tác nổi tiếng nào mà sinh viên thường hợp tác với?
+    - Tôi đang tìm hiểu về chỉ tiêu tuyển sinh và số lượng sinh viên dự kiến của ngành [An toàn Thông tin](majors) tại [Đại học Cần Thơ](university). Có những dự án nghiên cứu hay các sự kiện khoa học nào đặc biệt diễn ra trong ngành này?
+    - Hãy chia sẻ thông tin về quy mô lớp học và chỉ tiêu tuyển sinh của ngành [Truyền thông Đa phương tiện](majors) tại [Đại học Cần Thơ](university) trong năm học mới. Có những đội ngũ giảng viên nổi tiếng nào đang dạy trong chương trình?
+
+
+- intent: review
+  examples: |
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao trong lĩnh vực khoa học xã hội? 
+    - Nếu bạn phải mô tả [ctu](university) trong ba từ, những từ đó sẽ là gì?
+    - Bạn đã nghe nói gì về [dhct](university)? Hãy chia sẻ một khía cạnh bạn thấy thú vị.
+    - Tóm tắt ba điểm mạnh của [Đại học Cần Thơ](university) mà bạn biết.
+    - Nêu lý do mà [ctu](university) nổi tiếng về công nghệ.
+    - Tại sao [Đại học Cần Thơ](university) có danh tiếng mạnh trong lĩnh vực kỹ thuật?
+    - Tại sao [Đại học Cần Thơ](university) được coi là lựa chọn xuất sắc trong ngành Khoa học Xã hội?
+    - [ctu](university) nổi tiếng nhờ vào những gì trong lĩnh vực khoa học?
+    - Bạn có thông tin gì đặc biệt về [dhct](university)? Hãy chia sẻ điều đó với mọi người.
+    - Ba điểm mạnh nổi bật của [Đại học Cần Thơ](university) là gì, theo bạn?
+    - Có những dự án nghiên cứu độc đáo nào đang được thực hiện tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao trong lĩnh vực nghệ thuật và văn hóa?
+    - [ctu](university) được mô tả như thế nào trong cộng đồng sinh viên?
+    - Bạn đã có trải nghiệm gì thú vị tại [dhct](university) mà bạn muốn chia sẻ?
+    - [Đại học Cần Thơ](university) có những cơ sở vật chất nào đặc biệt hấp dẫn?
+    - Bạn biết gì về cơ sở vật chất công nghệ tại [ctu](university)?
+    - Những chương trình hợp tác quốc tế nào mà [Đại học Cần Thơ](university) thường xuyên tham gia?
+    - [ctu](university) có những đối tác doanh nghiệp nổi tiếng nào mà sinh viên thường hợp tác với?
+    - Bạn thấy [Đại học Cần Thơ](university) có những điểm độc đáo nào về cách giảng dạy?
+    - [ctu](university) được biết đến như thế nào trong cộng đồng nghiên cứu?
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế?
+    - Bạn đã nghe nói gì về cộng đồng sinh viên quốc tế tại [ctu](university)?
+    - [Đại học Cần Thơ](university) có những chương trình đào tạo đặc biệt nào về công nghệ thông tin?
+    - Bạn nghĩ sao về cơ hội nghề nghiệp sau khi tốt nghiệp từ [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao trong lĩnh vực nghiên cứu khoa học?
+    - Có những cơ hội thực tập nào hấp dẫn cho sinh viên [ctu](university) không?
+    - Nếu phải chọn một lý do duy nhất, bạn sẽ nói gì về [Đại học Cần Thơ](university)?
+    - [ctu](university) có những cơ sở vật chất nào đặc biệt cho sinh viên ngành Kỹ thuật Phần mềm?
+    - Tại sao [Đại học Cần Thơ](university) là sự lựa chọn hàng đầu cho sinh viên học ngành An toàn Thông tin?
+    - Bạn có thông tin nào về các sự kiện xã hội mà [ctu](university) thường xuyên tổ chức không?
+    - [Đại học Cần Thơ](university) được biết đến như thế nào trong cộng đồng doanh nghiệp?
+    - Bạn đã có trải nghiệm thực tế nào qua các dự án tại [ctu](university) mà bạn muốn chia sẻ?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao trong việc chuẩn bị sinh viên cho sự nghiệp sau này?
+    - Bạn nghĩ sao về cách [ctu](university) hỗ trợ sinh viên trong việc tìm kiếm cơ hội thực tập?
+    - [Đại học Cần Thơ](university) có những chương trình đổi ngôi trường (exchange programs) nào hấp dẫn không?
+    - Bạn thấy như thế nào về sự đa dạng văn hóa trong cộng đồng sinh viên tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường có môi trường học tập tích cực?
+    - [ctu](university) có những hoạt động ngoại khóa nào đặc sắc mà sinh viên thường tham gia?
+    - Bạn đã nghe nói gì về cơ hội học bổng cho sinh viên tài năng tại [Đại học Cần Thơ](university)?
+    - [ctu](university) đánh giá cao những kỹ năng nào mà sinh viên học được sau thời gian học tập?
+    - Tại sao [Đại học Cần Thơ](university) là một trường lựa chọn phổ biến cho ngành Công nghệ Thông tin CLC?
+    - Bạn nghĩ sao về mức độ hỗ trợ mà [ctu](university) cung cấp cho sinh viên nghiên cứu khoa học?
+    - [Đại học Cần Thơ](university) có những đối tác quốc tế nổi tiếng nào trong lĩnh vực Công nghệ Thông tin?
+    - Tại sao [ctu](university) thu hút nhiều sinh viên quốc tế đến học?
+    - Bạn đã có cơ hội tham gia các dự án xã hội hay công đồng nào do [Đại học Cần Thơ](university) tổ chức chưa?
+    - [ctu](university) được đánh giá cao nhờ vào cách họ tích hợp công nghệ vào quá trình giảng dạy không?
+    - Tại sao [Đại học Cần Thơ](university) là sự lựa chọn phổ biến cho sinh viên ngành Mạng Máy tính và Truyền thông Dữ liệu?
+    - Bạn nghĩ sao về cơ hội việc làm sau khi tốt nghiệp từ [ctu](university)?
+    - [ctu](university) được biết đến như thế nào trong lĩnh vực Khoa học Máy tính?
+    - Bạn đã nghe nói gì về các dự án nghiên cứu mới nhất tại [Đại học Cần Thơ](university)?
+    - Tại sao [ctu](university) là một trường đại học phổ biến trong việc đào tạo chuyên gia trong lĩnh vực Công nghệ Thông tin CLC?
+    - Bạn thấy thế nào về sự đa dạng trong chương trình đào tạo của [Đại học Cần Thơ](university)?
+    - [ctu](university) có những dự án nghiên cứu nổi bật nào liên quan đến An toàn Thông tin không?
+    - Tại sao [Đại học Cần Thơ](university) là một điểm đến phổ biến cho sinh viên quốc tế học ngành Kỹ thuật Phần mềm?
+    - Bạn đã có cơ hội làm việc với các doanh nghiệp nào thông qua [ctu](university) chưa?
+    - [Đại học Cần Thơ](university) là một trường có những hoạt động ngoại khóa nào hấp dẫn đối với sinh viên?
+    - Bạn nghĩ sao về sự tích hợp của [ctu](university) với ngành công nghiệp trong quá trình giảng dạy?
+    - Tại sao [Đại học Cần Thơ](university) được xem là một trường có cơ hội nghề nghiệp tốt cho sinh viên Khoa học Máy tính?
+    - Bạn đã tham gia vào các dự án cộng đồng tại [ctu](university) chưa?
+    - [Đại học Cần Thơ](university) có những sự kiện khoa học hay hội thảo nào đáng chú ý không?
+    - Tại sao [ctu](university) là sự chọn lựa hàng đầu trong lĩnh vực Mạng Máy tính và Truyền thông Dữ liệu?
+    - Bạn nghĩ sao về cơ hội thực tập của sinh viên [Đại học Cần Thơ](university) tại các doanh nghiệp ngoại ô?
+    - [ctu](university) có những kế hoạch nâng cấp cơ sở vật chất nào cho ngành Khoa học Máy tính?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao về chuẩn bị sinh viên cho sự nghiệp sau này?
+    - Bạn có biết gì về cơ hội học bổng cho sinh viên xuất sắc tại [ctu](university)?
+    - [ctu](university) có những đối tác quốc tế nào trong lĩnh vực Công nghệ Thông tin CLC?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường có môi trường học tập tích cực?
+    - Bạn thấy như thế nào về sự hỗ trợ của [ctu](university) đối với sinh viên sau khi tốt nghiệp?
+    - Tại sao [Đại học Cần Thơ](university) là một trường hấp dẫn cho sinh viên ngành Kỹ thuật Phần mềm?
+    - [Đại học Cần Thơ](university) đã chứng minh sự xuất sắc của mình trong lĩnh vực Khoa học Xã hội, bạn nghĩ điều gì đã đưa trường lên vị thế cao như vậy?
+    - Nếu phải mô tả [ctu](university) bằng một câu, đó sẽ là Nơi hội tụ tri thức và sự sáng tạo theo bạn à?
+    - Một khía cạnh thú vị của [dhct](university) mà tôi nghe nói là..., bạn có thông tin gì khác không?
+    - Ba điểm mạnh mà tôi thấy [Đại học Cần Thơ](university) nổi bật là..., bạn có ý kiến gì về điều này?
+    - [ctu](university) nổi tiếng với công nghệ, nhưng theo bạn, điều gì làm cho trường này nổi bật trong lĩnh vực này?
+    - Tại sao [Đại học Cần Thơ](university) thu hút sự chú ý đặc biệt trong lĩnh vực Kỹ thuật?
+    - Trường [ctu](university) được biết đến như thế nào trong lĩnh vực nghệ thuật và văn hóa, theo quan điểm của bạn?
+    - Nếu mô tả [Đại học Cần Thơ](university) bằng một từ, bạn sẽ chọn từ gì và tại sao?
+    - Một điều độc đáo về [ctu](university) mà tôi muốn chia sẻ là..., bạn có điều gì để bổ sung không?
+    - Tại sao [Đại học Cần Thơ](university) được xem là địa chỉ lý tưởng để chuẩn bị cho sự nghiệp sau tốt nghiệp?
+    - [ctu](university) nổi bật trong việc tạo cơ hội thực tập, bạn có trải nghiệm gì để chia sẻ?
+    - Bạn nghĩ sao về việc [Đại học Cần Thơ](university) tích hợp công nghệ vào quá trình giảng dạy?
+    - Tại sao [ctu](university) là lựa chọn hàng đầu trong lĩnh vực Mạng Máy tính và Truyền thông Dữ liệu?
+    - [Đại học Cần Thơ](university) có những chương trình đào tạo đặc sắc nào về Công nghệ Thông tin CLC?
+    - Bạn đã nghe nói gì về cơ hội nghề nghiệp sau khi tốt nghiệp từ [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường đào tạo xuất sắc trong lĩnh vực Nghiên cứu Khoa học?
+    - [ctu](university) có những đối tác quốc tế nổi tiếng nào trong lĩnh vực Công nghệ Thông tin CLC?
+    - Bạn thấy thế nào về cách [Đại học Cần Thơ](university) hỗ trợ sinh viên sau khi tốt nghiệp?
+    - Nếu phải chọn một lý do duy nhất, bạn sẽ nói gì về [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) là một trường lựa chọn phổ biến cho sinh viên ngành Khoa học Máy tính?
+    - Một điểm đặc biệt của [Đại học Cần Thơ](university) mà tôi chú ý là..., bạn có ý kiến gì về điều này?
+    - Nếu có một từ để miêu tả [ctu](university), bạn sẽ chọn từ gì để thể hiện tinh thần của trường?
+    - Một khía cạnh độc đáo của [dhct](university) mà tôi thấy là..., bạn có thông tin gì để bổ sung không?
+    - Ba điểm mạnh mà bạn thấy [Đại học Cần Thơ](university) nổi bật là gì, và làm thế nào nó ảnh hưởng đến sinh viên?
+    - [ctu](university) được biết đến với công nghệ, nhưng có điều gì khác biệt về cách trường này tích hợp công nghệ vào giáo dục?
+    - Tại sao [Đại học Cần Thơ](university) lại là trường chọn của nhiều sinh viên khi nói đến lĩnh vực Kỹ thuật?
+    - Bạn đã có trải nghiệm gì thú vị với [ctu](university) mà bạn muốn chia sẻ với người khác?
+    - [Đại học Cần Thơ](university) nổi tiếng với cơ sở vật chất, bạn có thông tin chi tiết về những điểm mạnh này không?
+    - Bạn cảm nhận thế nào về cơ sở vật chất công nghệ tại [ctu](university)?
+    - [Đại học Cần Thơ](university) thường tham gia vào những chương trình hợp tác quốc tế nào?
+    - [ctu](university) hợp tác với những doanh nghiệp nổi tiếng nào, và có ảnh hưởng gì đối với sinh viên?
+    - Nếu phải tóm tắt [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói gì về trường?
+    - [ctu](university) được biết đến như thế nào trong cộng đồng sinh viên?
+    - Bạn có nhận xét gì về cộng đồng quốc tế tại [dhct](university)?
+    - Có những chương trình đào tạo đặc biệt nào về Công nghệ Thông tin tại [ctu](university) mà bạn nghĩ là nổi bật?
+    - Ôn lại chặng đường nghề nghiệp sau tốt nghiệp, bạn thấy [ctu](university) làm tốt như thế nào trong việc hỗ trợ sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao trong lĩnh vực nghiên cứu khoa học?
+    - [ctu](university) cung cấp những cơ hội thực tập hấp dẫn nào cho sinh viên không?
+    - Nếu phải chọn một điều duy nhất, bạn nghĩ [Đại học Cần Thơ](university) nổi tiếng vì điều gì nhất?
+    - Tại sao [ctu](university) thu hút nhiều sinh viên quốc tế đến học tập?
+    - [Đại học Cần Thơ](university) nổi tiếng với lĩnh vực Khoa học Máy tính, bạn nghĩ điều gì làm cho trường xuất sắc như vậy?
+    - Nếu phải mô tả [ctu](university) bằng một câu, bạn sẽ nói như thế nào để tóm gọn tinh thần của trường?
+    - Một điều thú vị về [dhct](university) là..., bạn có thông tin gì để chia sẻ về điều này không?
+    - Ba điểm mạnh mà bạn thấy [Đại học Cần Thơ](university) nổi bật là gì, và làm thế nào chúng hỗ trợ sinh viên?
+    - [ctu](university) nổi tiếng với công nghệ, nhưng theo bạn, điều gì khiến trường này nổi bật trong lĩnh vực này?
+    - Tại sao [Đại học Cần Thơ](university) lại là lựa chọn hàng đầu trong lĩnh vực Kỹ thuật?
+    - Bạn đã có những trải nghiệm đặc biệt nào với [ctu](university) mà bạn muốn chia sẻ không?
+    - [Đại học Cần Thơ](university) được biết đến với cơ sở vật chất, bạn có thông tin chi tiết về những điểm mạnh này không?
+    - Bạn cảm nhận thế nào về cơ sở vật chất công nghệ tại [ctu](university)?
+    - [Đại học Cần Thơ](university) thường tham gia vào những chương trình hợp tác quốc tế nào?
+    - [ctu](university) hợp tác với những doanh nghiệp nổi tiếng nào, và có ảnh hưởng gì đối với sinh viên?
+    - Nếu phải tóm tắt [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói gì về trường?
+    - [ctu](university) được biết đến như thế nào trong cộng đồng sinh viên?
+    - Bạn có nhận xét gì về cộng đồng quốc tế tại [dhct](university)?
+    - Có những chương trình đào tạo đặc biệt nào về Công nghệ Thông tin tại [ctu](university) mà bạn nghĩ là nổi bật?
+    - Ôn lại chặng đường nghề nghiệp sau tốt nghiệp, bạn thấy [ctu](university) làm tốt như thế nào trong việc hỗ trợ sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá cao trong lĩnh vực nghiên cứu khoa học?
+    - [ctu](university) cung cấp những cơ hội thực tập hấp dẫn nào cho sinh viên không?
+    - Nếu phải chọn một điều duy nhất, bạn nghĩ [Đại học Cần Thơ](university) nổi tiếng vì điều gì nhất?
+    - Tại sao [ctu](university) thu hút nhiều sinh viên quốc tế đến học tập?
+    - Cho biết điểm mạnh của [Đại học Cần Thơ](university) trong lĩnh vực nghiên cứu khoa học.
+    - Tóm tắt ba điểm mạnh của [Đại học Cần Thơ](university) mà bạn biết.
+    - Bạn có ý kiến gì về [ctu](university) trong lĩnh vực kỹ thuật và công nghệ?
+    - Nêu lý do mà [Đại học Cần Thơ](university) được coi là một trong những trường đại học hàng đầu ở châu Á.
+    - Bạn đã nghe nói gì về [Đại học Cần Thơ](university) ở Hàn Quốc? Hãy chia sẻ một khía cạnh bạn thấy thú vị.
+    - Nếu trường [Đại học Cần Thơ](university) là một món ăn, bạn nghĩ nó sẽ giống món gì?
+    - Hãy tả cảm giác mà bạn có khi đặt chân đến trường [Đại học Cần Thơ](university) lần đầu tiên.
+    - Bạn đã nghe về trường [đại học cần thơ](university) từ một người nào đó, hãy chia sẻ lại những gì bạn đã nghe được.
+    - Nếu trường [đại học cần thơ](university) là một tác phẩm nghệ thuật, bạn nghĩ nó sẽ có tên gì và được làm từ nguyên liệu gì?
+    - Hãy tưởng tượng trường [Đại học Cần Thơ](university) là một người bạn, bạn sẽ miêu tả họ như thế nào trong một bức thư ngắn?
+    - Tôi muốn nghe câu chuyện thú vị nhất mà bạn biết về trường [Đại học Cần Thơ](university).
+    - Nếu bạn phải dùng một từ để mô tả trường [dhct](university), từ đó là gì và tại sao?
+    - review về trường [Đại học Cần Thơ](university)
+    - review về trường [ctu](university)
+    - review có tâm về trường [đại học cần thơ](university)
+    - giới thiệu vài nét về trường [Đại học Cần Thơ](university) cho tui biết
+    - giới thiệu về trường [đại học cần thơ](university)
+    - giới thiệu trường [ctu](university) 
+    - giới thiệu một chút về trường [đại học cần thơ](university)
+    - giới thiệu về trường [Đại học Bách Khoa TP.HCM](university)
+    - cho tui chút review về trường [đại học cần thơ](university)
+    - những đạnh giá về trường [đại học cần thơ](university)
+    - Tôi muốn biết ý kiến của sinh viên về trường [đại học cần thơ](university)
+    - Tôi quan tâm đến thông tin đánh giá về trường [ctu](university), bạn có thể chia sẻ được không
+    - Xin hãy cho tôi biết đánh giá tổng quan về trường [dhct](university).
+    - Tôi muốn nghe ý kiến của bạn về trường [Đại học Cần Thơ](university) có tốt không
+    - Tôi quan tâm đến đánh giá từ sinh viên về trường [Đại học Cần Thơ](university), bạn có thể chia sẻ được không
+    - Tôi muốn biết ý kiến của sinh viên về trường [Đại học Cần Thơ](university), liệu có thể chia sẻ thông tin đó được không
+    - Nếu bạn có thông tin trường [Đại học Cần Thơ](university) thì bạn cho tui một lời nhận xét về trường, hay là review cũng được nữa
+    - Bạn có thể đưa ra một số đánh giá về trường [Đại học Cần Thơ](university) không?
+    - Tôi muốn nghe ý kiến của bạn về trường [ctu](university).
+    - Bạn có thể chia sẻ với tôi những ấn tượng của bạn về trường [ctu](university) không?
+    - Tôi đang xem xét việc học tại [ctu](university), có thể bạn cho tôi biết một số nhận xét về trường này không?
+    - Tôi đang cân nhắc đăng ký vào [ctu](university), bạn có thể chia sẻ kinh nghiệm của mình về trường này không?
+    - Tôi muốn biết ý kiến của bạn về trường [đại học ct](university), bạn có thể cho tôi một vài nhận xét không ạ?
+    - Bạn đã từng nghe đến trường [đại học ct](university) chưa? Cho tôi biết nhận xét của bạn về trường này.
+    - Nếu bạn phải đưa ra một lời khuyên cho những người muốn tham gia vào trường [Đại học CT](university), điều gì sẽ làm bạn ấn tượng và muốn giới thiệu về trường này?
+    - Bạn đã từng học tại trường [Đại học Cần Thơ](university) chưa? Vui lòng chia sẻ ý kiến của bạn về trường này có tốt không ạ?
+    - Tôi quan tâm đến đánh giá từ sinh viên về trường [Đại học CT](university). Bạn có thể chia sẻ nhận xét và đánh giá của sinh viên về trường này được không ạ?
+    - Bạn có thông tin về trường [Đại học Cần Thơ](university)? Tôi muốn biết ý kiến của sinh viên về trường này. Bạn có thể chia sẻ thông tin đó được không ạ?
+    - Nếu bạn có thông tin về trường [Đại học Cần Thơ](university), bạn có thể cho tôi một lời nhận xét hoặc review về trường này được không ạ?
+    - Bạn có thể đưa ra một số đánh giá về trường [Đại học CT](university) dựa trên những thông tin và trải nghiệm của bạn không ạ?
+
+
+
+
+- intent: career_opportunities
+  examples: |
+    - Cơ hội việc làm sau khi tốt nghiệp từ [Đại học Cần Thơ](university) thực sự đáng chú ý. Sinh viên thường có nhiều cơ hội nghề nghiệp đặc sắc, bạn nghĩ điều này là do đâu?
+    - [ctu](university) nổi tiếng với việc đảm bảo cơ hội việc làm cho sinh viên sau khi tốt nghiệp. Bạn có thông tin chi tiết về những chương trình hỗ trợ nghề nghiệp mà trường cung cấp không?
+    - Tích hợp công nghệ vào quá trình giảng dạy là một điểm mạnh của [Đại học Cần Thơ](university). Làm thế nào điều này ảnh hưởng đến cơ hội việc làm của sinh viên ngành Công nghệ Thông tin?
+    - Nếu bạn là sinh viên ngành Kỹ thuật Phần mềm tại [ctu](university), bạn sẽ có những cơ hội nghề nghiệp nào sau khi tốt nghiệp?
+    - [Đại học Cần Thơ](university) có những chương trình đào tạo hay khóa học nào giúp sinh viên chuẩn bị tốt cho thị trường lao động?
+    - [ctu](university) thường xuyên tổ chức các sự kiện tuyển dụng và hội thảo nghề nghiệp. Bạn nghĩ sự kiện này có ảnh hưởng gì đến cơ hội việc làm của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được xem là một trường đào tạo xuất sắc cho sinh viên ngành Mạng Máy tính và Truyền thông Dữ liệu?
+    - [ctu](university) có những chương trình thực tập hợp tác với doanh nghiệp nổi tiếng nào? Làm thế nào điều này giúp sinh viên trong việc kiếm việc sau tốt nghiệp?
+    - Nếu phải tóm tắt cơ hội việc làm tại [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói như thế nào?
+    - [ctu](university) hỗ trợ sinh viên Khoa học Máy tính như thế nào trong việc tìm kiếm cơ hội nghề nghiệp sau khi tốt nghiệp?
+    - Bạn nghĩ sao về cơ hội nghề nghiệp cho sinh viên ngành An toàn Thông tin tại [Đại học Cần Thơ](university)?
+    - [ctu](university) có những mối quan hệ đối tác vững chắc với các công ty trong lĩnh vực Công nghệ Thông tin CLC không?
+    - Tại sao [Đại học Cần Thơ](university) là lựa chọn phổ biến cho sinh viên ngành Khoa học Máy tính khi nói đến cơ hội nghề nghiệp?
+    - [ctu](university) có những chương trình đặc sắc nào giúp sinh viên Kỹ thuật Phần mềm có nhiều cơ hội việc làm sau khi tốt nghiệp?
+    - Bạn đã nghe nói gì về cơ hội thực tập và làm việc cho sinh viên ngành Công nghệ Thông tin CLC tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế đến học, và cơ hội nghề nghiệp sau khi tốt nghiệp của họ như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn thấy điều này có tác động gì đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường lựa chọn hàng đầu cho sinh viên ngành Kỹ thuật Phần mềm khi nói về cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) nổi tiếng với việc giúp sinh viên có cơ hội việc làm cao sau khi tốt nghiệp. Bạn nghĩ điều gì đã tạo nên sự xuất sắc này?
+    - [ctu](university) cung cấp những chương trình hỗ trợ nghề nghiệp nào để chuẩn bị sinh viên cho thị trường lao động?
+    - Tích hợp công nghệ vào giáo dục là một đặc điểm nổi bật của [Đại học Cần Thơ](university). Làm thế nào điều này đóng góp vào cơ hội việc làm cho sinh viên ngành Công nghệ Thông tin?
+    - Nếu bạn là sinh viên Kỹ thuật Phần mềm tại [ctu](university), bạn thấy có những cơ hội nghề nghiệp nào mà trường mang lại sau khi tốt nghiệp?
+    - [Đại học Cần Thơ](university) thường xuyên tổ chức các sự kiện tuyển dụng và hội thảo nghề nghiệp. Bạn nghĩ những sự kiện này ảnh hưởng thế nào đến cơ hội việc làm của sinh viên?
+    - Tại sao [ctu](university) lại là lựa chọn hàng đầu cho sinh viên ngành Mạng Máy tính và Truyền thông Dữ liệu khi nói đến cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) có những chương trình nào giúp sinh viên chuẩn bị tốt cho thị trường lao động?
+    - [ctu](university) có những chương trình thực tập hợp tác với các doanh nghiệp nổi tiếng không? Làm thế nào điều này giúp sinh viên Công nghệ Thông tin CLC trong việc tìm kiếm việc làm?
+    - Tóm tắt cơ hội việc làm tại [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn nghĩ điều này có ảnh hưởng như thế nào đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) lại là sự lựa chọn hàng đầu cho sinh viên ngành Khoa học Máy tính khi nói đến cơ hội nghề nghiệp?
+    - [ctu](university) có những chương trình đặc sắc nào giúp sinh viên Kỹ thuật Phần mềm có nhiều cơ hội nghề nghiệp sau khi tốt nghiệp?
+    - Bạn đã nghe nói gì về cơ hội thực tập và làm việc cho sinh viên ngành Công nghệ Thông tin CLC tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế đến học, và cơ hội nghề nghiệp sau khi tốt nghiệp của họ như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn thấy điều này có tác động gì đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường lựa chọn hàng đầu cho sinh viên ngành Kỹ thuật Phần mềm khi nói đến cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) là điểm đến lý tưởng cho việc bắt đầu sự nghiệp. Cơ hội việc làm sau khi tốt nghiệp từ trường này thực sự ấn tượng. Bạn nghĩ điều gì đã làm nên sự xuất sắc này?
+    - [ctu](university) không chỉ cung cấp kiến thức chuyên ngành mà còn chú trọng vào cơ hội nghề nghiệp cho sinh viên. Bạn có thông tin chi tiết về những chương trình hỗ trợ nghề nghiệp mà trường đang triển khai không?
+    - Việc tích hợp công nghệ vào quá trình giảng dạy là một đặc điểm độc đáo của [Đại học Cần Thơ](university). Làm thế nào điều này có thể đóng góp vào cơ hội việc làm của sinh viên ngành Công nghệ Thông tin?
+    - Nếu bạn là sinh viên Kỹ thuật Phần mềm tại [ctu](university), bạn thấy có những cơ hội nghề nghiệp nào mà trường mang lại sau khi tốt nghiệp?
+    - [Đại học Cần Thơ](university) tổ chức nhiều sự kiện tuyển dụng và hội thảo nghề nghiệp. Bạn nghĩ những sự kiện này ảnh hưởng như thế nào đến cơ hội việc làm của sinh viên?
+    - Tại sao [ctu](university) lại là lựa chọn hàng đầu cho sinh viên ngành Mạng Máy tính và Truyền thông Dữ liệu khi nói đến cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) có những chương trình nào giúp sinh viên chuẩn bị tốt cho thị trường lao động?
+    - [ctu](university) có những chương trình thực tập hợp tác với các doanh nghiệp nổi tiếng không? Làm thế nào điều này giúp sinh viên Công nghệ Thông tin CLC trong việc tìm kiếm việc làm?
+    - Tóm tắt cơ hội việc làm tại [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn nghĩ điều này có ảnh hưởng như thế nào đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) lại là sự lựa chọn hàng đầu cho sinh viên ngành Khoa học Máy tính khi nói đến cơ hội nghề nghiệp?
+    - [ctu](university) có những chương trình đặc sắc nào giúp sinh viên Kỹ thuật Phần mềm có nhiều cơ hội nghề nghiệp sau khi tốt nghiệp?
+    - Bạn đã nghe nói gì về cơ hội thực tập và làm việc cho sinh viên ngành Công nghệ Thông tin CLC tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế đến học, và cơ hội nghề nghiệp sau khi tốt nghiệp của họ như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn thấy điều này có tác động gì đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường lựa chọn hàng đầu cho sinh viên ngành Kỹ thuật Phần mềm khi nói đến cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) nổi tiếng với việc đặt nền móng mạnh mẽ cho sự nghiệp của sinh viên sau khi tốt nghiệp. Bạn nghĩ điều gì đã đóng góp vào thành công này?
+    - [ctu](university) không chỉ chú trọng vào việc truyền đạt kiến thức mà còn đặt ra nhiều cơ hội nghề nghiệp cho sinh viên. Bạn có thông tin chi tiết về những chương trình hỗ trợ nghề nghiệp mà trường đang triển khai không?
+    - Tích hợp công nghệ vào quá trình giảng dạy là một đặc điểm độc đáo của [Đại học Cần Thơ](university). Làm thế nào điều này ảnh hưởng đến cơ hội việc làm của sinh viên ngành Công nghệ Thông tin?
+    - Nếu bạn là sinh viên Kỹ thuật Phần mềm tại [ctu](university), bạn thấy có những cơ hội nghề nghiệp nào mà trường mang lại sau khi tốt nghiệp?
+    - [Đại học Cần Thơ](university) tổ chức nhiều sự kiện tuyển dụng và hội thảo nghề nghiệp. Bạn nghĩ những sự kiện này ảnh hưởng như thế nào đến cơ hội việc làm của sinh viên?
+    - Tại sao [ctu](university) lại là lựa chọn hàng đầu cho sinh viên ngành Mạng Máy tính và Truyền thông Dữ liệu khi nói đến cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) có những chương trình nào giúp sinh viên chuẩn bị tốt cho thị trường lao động?
+    - [ctu](university) có những chương trình thực tập hợp tác với các doanh nghiệp nổi tiếng không? Làm thế nào điều này giúp sinh viên Công nghệ Thông tin CLC trong việc tìm kiếm việc làm?
+    - Tóm tắt cơ hội việc làm tại [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn nghĩ điều này có ảnh hưởng như thế nào đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) lại là sự lựa chọn hàng đầu cho sinh viên ngành Khoa học Máy tính khi nói đến cơ hội nghề nghiệp?
+    - [ctu](university) có những chương trình đặc sắc nào giúp sinh viên Kỹ thuật Phần mềm có nhiều cơ hội nghề nghiệp sau khi tốt nghiệp?
+    - Bạn đã nghe nói gì về cơ hội thực tập và làm việc cho sinh viên ngành Công nghệ Thông tin CLC tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế đến học, và cơ hội nghề nghiệp sau khi tốt nghiệp của họ như thế nào?
+    - [ctu](university) thường xuyên cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn thấy điều này có tác động gì đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được coi là một trường lựa chọn hàng đầu cho sinh viên ngành Kỹ thuật Phần mềm khi nói đến cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) tạo nền tảng vững chắc cho sự nghiệp của sinh viên sau khi tốt nghiệp. Bạn tin rằng điều gì làm nên thành công đặc biệt này?
+    - [ctu](university) không chỉ cung cấp kiến thức chuyên ngành mà còn mở ra nhiều cơ hội nghề nghiệp cho sinh viên. Bạn có thông tin chi tiết về các chương trình hỗ trợ nghề nghiệp mà trường đang triển khai không?
+    - Sự tích hợp công nghệ trong quá trình giảng dạy tại [Đại học Cần Thơ](university) là một yếu tố quan trọng đóng góp vào cơ hội việc làm cho sinh viên ngành Công nghệ Thông tin. Bạn nghĩ điều này ảnh hưởng như thế nào?
+    - Là sinh viên Kỹ thuật Phần mềm tại [ctu](university), bạn cảm nhận những cơ hội nghề nghiệp nào mà trường mang lại sau khi tốt nghiệp?
+    - Sự kiện tuyển dụng và hội thảo nghề nghiệp thường xuyên được tổ chức tại [Đại học Cần Thơ](university). Bạn cho rằng những sự kiện này đóng góp thế nào vào cơ hội việc làm của sinh viên?
+    - Với ngành Mạng Máy tính và Truyền thông Dữ liệu, tại sao [ctu](university) lại là lựa chọn hàng đầu khi nói về cơ hội nghề nghiệp?
+    - [Đại học Cần Thơ](university) có những chương trình nào giúp sinh viên chuẩn bị tốt cho thị trường lao động?
+    - Có thông tin gì về những chương trình thực tập hợp tác với doanh nghiệp nổi tiếng tại [ctu](university)? Làm thế nào chúng hỗ trợ sinh viên Công nghệ Thông tin CLC trong việc tìm kiếm việc làm?
+    - Nếu phải tóm tắt cơ hội việc làm tại [Đại học Cần Thơ](university) trong một câu, bạn sẽ nói như thế nào?
+    - [ctu](university) thường xuyên điều chỉnh chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn nghĩ điều này có ảnh hưởng như thế nào đến cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) là sự lựa chọn hàng đầu cho sinh viên ngành Khoa học Máy tính khi nói đến cơ hội nghề nghiệp?
+    - [ctu](university) có những chương trình đặc sắc nào hỗ trợ sinh viên Kỹ thuật Phần mềm có nhiều cơ hội nghề nghiệp sau khi tốt nghiệp?
+    - Bạn đã nghe nói gì về cơ hội thực tập và làm việc cho sinh viên ngành Công nghệ Thông tin CLC tại [ctu](university)?
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế, và cơ hội nghề nghiệp sau khi tốt nghiệp của họ như thế nào?
+    - [ctu](university) luôn cập nhật chương trình đào tạo để đáp ứng nhu cầu thị trường lao động. Bạn nghĩ điều này ảnh hưởng như thế nào đến cơ hội nghề nghiệp của sinh viên?
+    - Cơ hội làm việc sau khi ra trường [Đại học Cần Thơ](university)
+    - Thông tin cơ hội làm việc sau khi ra trường [dhct](university) rất đa dạng và hấp dẫn.
+    - Cơ hội làm việc sau khi ra trường [ctu](university) là lương ngàn đô hả
+    - cho tui biết cái cơ hội làm việc sau khi ra trường [ctu](university) 
+    - Cơ hội làm việc sau khi ra trường [dhct](university) có đa dạng và hấp dẫn không vậy.
+    - Tôi quan tâm đến việc tìm hiểu về các cơ hội việc làm sau khi ra trường từ trường [Đại học Cần Thơn](university.
+    - Xin hãy cung cấp thông tin về cơ hội nghề nghiệp và sự phát triển sau khi tốt nghiệp từ trường [Đại học ct](university). 
+    - Tôi quan tâm đến việc biết thông tin về cơ hội làm việc và các chương trình học thuật tại trường [Đại học Cần Thơ](university).
+    - Cho tôi thông tin về cơ hội việc làm và các dự án nghiên cứu của sinh viên từ trường [Đại học Công nghệ Thông tin](university).
+    - Tôi muốn biết về các chương trình hỗ trợ việc làm và thực tập sau khi tốt nghiệp tại trường [Đại học Cần Thơ](university).
+    - Xin hãy tư vấn cho tôi về cơ hội việc làm và các hoạt động hỗ trợ nghề nghiệp tại trường [Đại học ct](university).
+    - Hãy cung cấp cho tôi thông tin về các công ty đối tác và cơ hội việc làm sau khi tốt nghiệp tại trường [Đại học ct](university).
+    - Tôi quan tâm đến việc biết thông tin về các dự án nghiên cứu và cơ hội việc làm sau khi tốt nghiệp từ trường [CTU](university).
+    - [Đại học Cần Thơ](university) không chỉ là nơi truyền đạt kiến thức, mà còn là nguồn động viên mạnh mẽ cho sự nghiệp sau khi tốt nghiệp. Bạn cảm nhận điều gì đặc biệt mà trường mang lại cho sinh viên?
+    - [ctu](university) đặt sự tích hợp công nghệ vào trung tâm của quá trình giảng dạy, giúp sinh viên ngành Công nghệ Thông tin có cơ hội nghề nghiệp đa dạng. Làm thế nào bạn nghĩ điều này tạo lợi thế cho họ?
+    - Trong vai trò sinh viên Kỹ thuật Phần mềm tại [ctu](university), bạn gặp những cơ hội nghề nghiệp nào độc đáo và hấp dẫn sau khi tốt nghiệp?
+    - [Đại học Cần Thơ](university) thường xuyên tổ chức các sự kiện tuyển dụng và hội thảo nghề nghiệp. Bạn cảm nhận những sự kiện này ảnh hưởng như thế nào đến sự chuẩn bị nghề nghiệp của sinh viên?
+    - Trong lĩnh vực Mạng Máy tính và Truyền thông Dữ liệu, tại sao [ctu](university) được coi là điểm đến hàng đầu với những cơ hội nghề nghiệp độc đáo?
+    - [Đại học Cần Thơ](university) chăm sóc sinh viên không chỉ trong việc truyền đạt kiến thức mà còn thông qua các chương trình hỗ trợ nghề nghiệp. Bạn có thông tin chi tiết về chúng không?
+    - [ctu](university) liên tục cập nhật chương trình đào tạo để đáp ứng xu hướng thị trường lao động. Bạn nghĩ điều này làm thay đổi như thế nào trong cơ hội nghề nghiệp của sinh viên?
+    - Tại sao [Đại học Cần Thơ](university) được đánh giá là trường đào tạo hàng đầu cho sinh viên ngành Khoa học Máy tính khi nói đến cơ hội nghề nghiệp?
+    - [ctu](university) giới thiệu những chương trình đặc sắc nào giúp sinh viên Kỹ thuật Phần mềm nổi bật trên thị trường lao động sau khi tốt nghiệp?
+    - Bạn đã nghe đến cơ hội thực tập và làm việc cho sinh viên ngành Công nghệ Thông tin CLC tại [ctu](university)? Chia sẻ ý kiến của bạn về chúng.
+    - Tại sao [Đại học Cần Thơ](university) thu hút nhiều sinh viên quốc tế, và làm thế nào cơ hội nghề nghiệp sau khi tốt nghiệp ở đây được đánh giá?
+    - [ctu](university) không chỉ giáo dục mà còn đào tạo sinh viên về kỹ năng cần thiết cho thị trường lao động. Bạn cảm nhận điều này ảnh hưởng như thế nào đến cơ hội nghề nghiệp của họ?
+    - Tại sao [Đại học Cần Thơ](university) được coi là điểm đến hàng đầu cho sinh viên ngành Kỹ thuật Phần mềm khi nói đến cơ hội nghề nghiệp?
+    - Cơ hội việc làm sau khi tốt nghiệp từ [Đại học Cần Thơ](university) thực sự đáng chú ý. Bạn nghĩ điều này là do những yếu tố gì?
+    - [đh ctu](university) nổi tiếng với việc đảm bảo cơ hội việc làm cho sinh viên sau khi tốt nghiệp. Bạn có thông tin chi tiết về những chương trình hỗ trợ nghề nghiệp mà trường cung cấp không?
+    - Tích hợp công nghệ vào quá trình giảng dạy là một điểm mạnh của [Đại học Cần Thơ](university). Làm thế nào điều này ảnh hưởng đến cơ hội việc làm của sinh viên ngành Công nghệ Thông tin?
+    - Nếu bạn là sinh viên ngành Kỹ thuật Phần mềm tại [ctu](university), bạn sẽ có những cơ hội nghề nghiệp nào sau khi tốt nghiệp?
+
+- intent: teach
+  examples: |
+    - Ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) dạy cho tui những gì
+    - tui học được gì ở [truyền thông đa phương tiện](majors) tại [ctu](university)
+    - Tôi muốn biết về nội dung giảng dạy trong ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university). Các môn học chính là gì?
+    - Khi theo đuổi ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), tôi sẽ học những kỹ năng cụ thể nào?
+    - Bạn có thể tóm lược về nội dung giảng dạy của ngành [công nghệ thông tin CLC](majors) tại [ctu](university) không?
+    - Tôi quan tâm đến những gì tôi sẽ học khi chọn ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi theo đuổi ngành [kỹ thuật phần mềm](majors) tại [ctu](university), tôi sẽ học về những chủ đề nào?
+    - Cho tôi biết về nội dung giảng dạy trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Những môn học nào là quan trọng nhất?
+    - Tôi muốn hiểu rõ về nội dung giảng dạy trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university). Các kỹ năng cần thiết nhất là gì?
+    - Bạn có thể mô tả ngắn gọn về nội dung giảng dạy của ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) có những môn học nào đặc biệt và thú vị?
+    - Tôi muốn biết về các môn học chính trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Những kỹ năng cụ thể tôi sẽ học được là gì?
+    - Trong ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university), sinh viên sẽ được đào tạo về những khía cạnh nào của bảo mật thông tin?
+    - Bạn có thể chia sẻ về những môn học quan trọng trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university) không?
+    - Nếu tôi chọn học ngành [công nghệ thông tin CLC](majors) tại [ctu](university), tôi sẽ học những kiến thức và kỹ năng nào?
+    - Tôi quan tâm đến các môn học cơ bản và chuyên sâu trong ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university). Bạn có thể mô tả sơ bộ về chúng không?
+    - Ngành [kỹ thuật phần mềm](majors) tại [ctu](university) có những đặc điểm nào độc đáo trong nội dung giảng dạy?
+    - Tôi muốn hiểu về nội dung giảng dạy trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Các môn học đặc sắc là gì?
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), sinh viên sẽ được học về những công nghệ và công cụ phổ biến nào?
+    - Bạn có thể chia sẻ về những môn học quan trọng nhất trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) 
+    - Ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) đào tạo về những lĩnh vực cụ thể nào của ngành này?
+    - Nếu tôi quyết định học [truyền thông đa phương tiện](majors) tại [ctu](university), liệu tôi có cơ hội nắm vững kiến thức về nền công nghiệp này không?
+    - Ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) có những chương trình đào tạo nào liên quan đến bảo mật mạng và dữ liệu?
+    - Trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), sinh viên có cơ hội tham gia vào các dự án nghiên cứu không?
+    - Nếu tôi chọn học [công nghệ thông tin CLC](majors) tại [ctu](university), liệu tôi có được tiếp cận với công nghệ mới và xu hướng hiện đại không?
+    - Tôi muốn tìm hiểu về các khóa học chuyên sâu trong ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university). Bạn có thể giới thiệu một số chủ đề không?
+    - Ngành [kỹ thuật phần mềm](majors) tại [ctu](university) hướng dẫn sinh viên về việc phát triển phần mềm trong môi trường thực tế như thế nào?
+    - Tôi quan tâm đến các môn học thực hành trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Có những dự án nào đang được thực hiện?
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), liệu sinh viên có được thực hành trên các dự án thực tế không?
+    - Bạn có thể chia sẻ về những khả năng và kỹ năng mà sinh viên sẽ phát triển khi theo đuổi ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Trong ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university), liệu có những khóa học nào giúp sinh viên phát triển kỹ năng lập trình và giải quyết vấn đề không?
+    - Nếu tôi chọn học [truyền thông đa phương tiện](majors) tại [ctu](university), liệu tôi có cơ hội thực tập tại các doanh nghiệp trong lĩnh vực này không?
+    - Ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) có những chương trình học liên quan đến nghiên cứu và phát triển các biện pháp bảo mật mới không?
+    - Trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), sinh viên sẽ được học về các công nghệ mạng và protocôl nào?
+    - Nếu tôi chọn học [công nghệ thông tin CLC](majors) tại [ctu](university), liệu có các khóa học về phát triển ứng dụng di động không?
+    - Tôi muốn biết về các môn học chuyên sâu trong ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university). Các chủ đề nghiên cứu là gì?
+    - Ngành [kỹ thuật phần mềm](majors) tại [ctu](university) có kế hoạch giảng dạy về quy trình phát triển phần mềm theo mô hình nào?
+    - Tôi quan tâm đến các môn học thực hành trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Có cơ hội làm việc với các dự án thực tế không?
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), liệu sinh viên có được hỗ trợ để tham gia vào các dự án nghiên cứu không?
+    - Bạn có thể chia sẻ về những chương trình đào tạo và sự chuẩn bị nghề nghiệp trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Trong ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university), sinh viên có cơ hội thực tập tại các doanh nghiệp nổi tiếng trong ngành công nghiệp công nghệ không?
+    - Nếu tôi chọn học [truyền thông đa phương tiện](majors) tại [ctu](university), liệu chương trình đào tạo có tính ứng dụng cao và thích hợp với nhu cầu thị trường không?
+    - Ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) có kế hoạch giảng dạy về cách đối mặt với những thách thức bảo mật hiện đại không?
+    - Trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), sinh viên có cơ hội tham gia vào các dự án nghiên cứu và phát triển công nghệ không?
+    - Nếu tôi chọn học [công nghệ thông tin CLC](majors) tại [ctu](university), liệu chương trình học có cung cấp kiến thức vững về phát triển phần mềm không?
+    - Tôi muốn tìm hiểu về cách ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) hỗ trợ sinh viên xây dựng sự nghiệp sau khi tốt nghiệp.
+    - Ngành [kỹ thuật phần mềm](majors) tại [ctu](university) có các liên kết với doanh nghiệp để đảm bảo sinh viên có cơ hội thực tập và việc làm không?
+    - Tôi quan tâm đến cách các môn học trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university) hỗ trợ sinh viên xây dựng portfolio nghệ thuật số của họ.
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), sinh viên có cơ hội tham gia vào các dự án phần mềm thực tế không?
+    - Bạn có thể chia sẻ về cơ hội nghề nghiệp và các sự kiện networking trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) không?
+    - Trong ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university), làm thế nào chương trình học hỗ trợ sinh viên phát triển kỹ năng làm việc nhóm và giải quyết vấn đề?
+    - Nếu tôi theo đuổi [truyền thông đa phương tiện](majors) tại [ctu](university), liệu có cơ hội tham gia vào các dự án sáng tạo và thú vị không?
+    - Trong ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university), sinh viên được giáo viên hướng dẫn trong việc phát triển kỹ năng phân tích và đối mặt với rủi ro an ninh mạng như thế nào?
+    - Trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), có những dự án độc đáo nào đã tạo ra những đổi mới trong ngành?
+    - Nếu tôi chọn học [công nghệ thông tin CLC](majors) tại [ctu](university), liệu chương trình học có chú trọng vào việc xây dựng sản phẩm và dịch vụ thực tế không?
+    - Tôi muốn biết về những cơ hội hợp tác giữa ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) và các doanh nghiệp trong lĩnh vực công nghiệp thông tin.
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), sinh viên có được trải nghiệm thực tế trong việc phát triển phần mềm theo phương pháp Agile không?
+    - Tôi quan tâm đến cách các môn học trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university) thúc đẩy sự sáng tạo và tinh thần nghệ thuật. Bạn có thể chia sẻ ví dụ không?
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), liệu sinh viên có được khuyến khích để đề xuất và triển khai những ý tưởng mới không?
+    - Bạn có thể mô tả cách ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [ctu](university) hỗ trợ sinh viên xây dựng mạng lưới chuyên gia và nguồn lực nghề nghiệp không?
+    - Trong ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university), liệu sinh viên có cơ hội thực hành trên các dự án nghiên cứu về trí tuệ nhân tạo không?
+    - Nếu tôi chọn học [truyền thông đa phương tiện](majors) tại [ctu](university), liệu có cơ hội tham gia vào các sự kiện sáng tạo như hội thảo và cuộc thi nghệ thuật số không?
+    - Ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university) có các khóa đào tạo về phòng chống tội phạm mạng và thâm nhập không?
+    - Trong ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), sinh viên có cơ hội thực tập tại các doanh nghiệp chuyên ngành không?
+    - Nếu tôi chọn học [công nghệ thông tin CLC](majors) tại [ctu](university), liệu chương trình đào tạo có tập trung vào ứng dụng thực tế của trí tuệ nhân tạo không?
+    - Tôi muốn tìm hiểu về cách ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) giúp sinh viên xây dựng kỹ năng lãnh đạo và quản lý dự án.
+    - Ngành [kỹ thuật phần mềm](majors) tại [ctu](university) có các chương trình hợp tác với doanh nghiệp để phát triển ứng dụng thực tế không?
+    - Tôi quan tâm đến cách các môn học trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university) kết hợp giữa sáng tạo và kỹ thuật. Bạn có thể cung cấp ví dụ không?
+    - Trong ngành [kỹ thuật phần mềm](majors) tại [ctu](university), sinh viên có cơ hội tham gia vào các dự án độc lập và phát triển sản phẩm không?
+    - Ngành [khoa học máy tính](majors) tại [Đại học Cần Thơ](university) dạy cho tôi những kỹ năng và kiến thức cơ bản nào?
+    - Tôi muốn biết về nội dung giảng dạy trong ngành [truyền thông đa phương tiện](majors) tại [ctu](university). Các môn học chính là gì?
+    - Tôi muốn biết về các môn học chính và kỹ năng được đào tạo trong ngành [an toàn thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Khi theo đuổi ngành [mạng máy tính và truyền thông dữ liệu](majors) tại [Đại học Cần Thơ](university), tôi sẽ học những kỹ năng cụ thể nào?
+    - Bạn có thể tóm tắt về nội dung giảng dạy của ngành [công nghệ thông tin CLC](majors) tại [ctu](university) không?
+    - Tôi quan tâm đến những môn học và kỹ năng tôi sẽ phát triển khi chọn ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi chọn ngành [kĩ thuật phần mềm CLC](majors) tại [Đại học Cần Thơ](university), tôi sẽ học những gì trong chương trình đào tạo?
+    - Tôi muốn hiểu về cấu trúc giảng dạy của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university). Các môn học quan trọng là gì?
+    - Trong chương trình đào tạo của ngành [hệ thống thông tin](majors) tại [ctu](university), sinh viên sẽ được trang bị những kỹ năng và kiến thức nào?
+    - Bạn có thể mô tả những kiến thức cơ bản và chuyên sâu tôi sẽ học khi chọn ngành [kỹ thuật phần mềm CLC](majors) tại [Đại học Cần Thơ](university) không?
+    - Nếu tôi quyết định theo đuổi ngành [công nghệ thông tin](majors) tại [Đại học Cần Thơ](university), tôi sẽ học những gì?
+    - Bạn có thể giải thích về chương trình học của ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university) được không?
+    - Tôi muốn biết về cấu trúc giảng dạy của ngành [hệ thống thông tin](majors) tại [ctu](university). Các môn học quan trọng là gì?
+    - Nếu tôi học ngành [thiết kế trang web](majors) tại [Đại học Cần Thơ](university), tôi sẽ được trang bị những kỹ năng và kiến thức nào?
+    - Tìm hiểu về nội dung giảng dạy trong chương trình [phân tích dữ liệu](majors) tại [ctu](university). Các môn học chính là gì?
+    - Khi theo đuổi ngành [hệ thống máy tính](majors) tại [Đại học Cần Thơ](university), sinh viên sẽ học những kỹ năng và kiến thức cụ thể nào?
+    - Bạn có thể mô tả về nội dung giảng dạy của ngành [kỹ thuật phần mềm](majors) tại [ctu](university) không?
+    - Tôi quan tâm đến những gì tôi sẽ học khi chọn ngành [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi chọn ngành [quản trị cơ sở dữ liệu](majors) tại [Đại học Cần Thơ](university), tôi sẽ được trang bị những kỹ năng gì trong chương trình đào tạo?
+    - Tôi muốn hiểu về nội dung giảng dạy của ngành [quản trị hệ thống thông tin](majors) tại [ctu](university). Các môn học quan trọng là gì?
+    - Tôi quan tâm đến những kỹ năng và kiến thức nào sẽ được truyền đạt trong chương trình [khoa học máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi chọn ngành [kỹ thuật phần mềm CLC](majors) tại [ctu](university), tôi sẽ học những gì trong chương trình đào tạo?
+    - Tìm hiểu về nội dung giảng dạy trong chương trình [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university). Các môn học chính là gì?
+    - Nếu tôi quyết định theo đuổi ngành [kỹ thuật phần mềm CLC](majors) tại [ctu](university), tôi sẽ được học về những khía cạnh nào trong lĩnh vực này?
+    - Bạn có thể giải thích về nội dung giảng dạy của ngành [truyền thông đa phương tiện](majors) tại [Đại học Cần Thơ](university) không?
+    - Tôi muốn biết về những kiến thức và kỹ năng tôi sẽ phát triển khi chọn ngành [công nghệ thông tin](majors) tại [ctu](university).
+    - Nếu tôi học ngành [lập trình ứng dụng di động](majors) tại [Đại học Cần Thơ](university), tôi sẽ được trang bị những kiến thức và kỹ năng gì?
+    - Nếu tôi quyết định học ngành [truyền thông đpt](majors) tại [Đại học Cần Thơ](university), tôi sẽ được học về những khía cạnh nào của lĩnh vực này?
+    - Tìm hiểu về nội dung giảng dạy trong chương trình [phân tích và thiết kế hệ thống](majors) tại [ctu](university). Các môn học chính là gì?
+    - Nếu tôi học ngành [lập trình hệ thống](majors) tại [Đại học Cần Thơ](university), tôi sẽ được trang bị những kiến thức và kỹ năng nào?
+    - Bạn có thể mô tả về nội dung giảng dạy của ngành [hệ thống thông tin quản lý](majors) tại [ctu](university) không?
+    - Tôi quan tâm đến những kỹ năng và kiến thức nào sẽ được truyền đạt trong chương trình [kỹ thuật truyền thông](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi chọn ngành [quản trị dự án phần mềm](majors) tại [ctu](university), tôi sẽ học về những gì trong chương trình đào tạo?
+    - Tôi muốn biết về những khóa học chính và những kỹ năng tôi sẽ phát triển khi theo đuổi ngành [kỹ thuật phần mềm CLC](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi quyết định học ngành [an ninh mạng](majors) tại [Đại học Cần Thơ](university), tôi sẽ được đào tạo những kỹ năng nào trong lĩnh vực này?
+    - Tìm hiểu về nội dung giảng dạy trong chương trình [kiểm thử phần mềm](majors) tại [ctu](university). Các môn học chính là gì?
+    - Nếu tôi học ngành [kỹ thuật truyền thông](majors) tại [Đại học Cần Thơ](university), tôi sẽ được học về những khía cạnh nào của lĩnh vực này?
+    - Bạn có thể mô tả về nội dung giảng dạy của ngành [công nghệ thông tin](majors) tại [ctu](university) không?
+    - Tôi quan tâm đến những kỹ năng và kiến thức nào sẽ được truyền đạt trong chương trình [hệ thống máy tính](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi chọn ngành [truyền thông đpt](majors) tại [ctu](university), tôi sẽ được học về những gì trong chương trình đào tạo?
+    - Tôi muốn biết về những khóa học chính và những kỹ năng tôi sẽ phát triển khi theo đuổi ngành [quản trị hệ thống thông tin](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi theo đuổi ngành [truyền thông đpt](majors) tại [Đại học Cần Thơ](university), tôi sẽ học về những công nghệ và ngôn ngữ lập trình nào?
+    - Tìm hiểu về nội dung giảng dạy trong chương trình [phân tích dữ liệu](majors) tại [ctu](university). Các môn học chính là gì và những kỹ năng tôi sẽ phát triển như thế nào?
+    - Nếu tôi học ngành [quản trị dự án phần mềm](majors) tại [Đại học Cần Thơ](university), tôi sẽ được học về quy trình quản lý dự án và các công cụ liên quan, phải không?
+    - Bạn có thể mô tả về nội dung giảng dạy của ngành [hệ thống thông tin quản lý](majors) tại [ctu](university) không? Các kỹ năng nào sẽ được đào tạo?
+    - Tôi quan tâm đến những kiến thức và kỹ năng nào sẽ được truyền đạt trong chương trình [kỹ thuật an ninh mạng](majors) tại [Đại học Cần Thơ](university).
+    - Nếu tôi chọn ngành [truyền thông đpt](majors) tại [ctu](university), tôi sẽ được học về lập trình game và các khía cạnh khác của ngành này, đúng không?
+    - Tôi muốn biết về những kỹ năng và kiến thức tôi sẽ học khi chọn ngành [kĩ thuật phần mềm CLC](majors) tại [Đại học Cần Thơ](university).
+    - Tôi muốn hiểu rõ hơn về chương trình [hệ thống thông tin](majors) tại [Đại học Cần Thơ](university). Bạn có thể chia sẻ về các môn học cũng như cơ hội nghề nghiệp sau khi tốt nghiệp không?
+    - Nếu tôi quyết định theo đuổi ngành [truyền thông đpt](majors) tại [ctu](university), liệu rằng chương trình đào tạo có tập trung vào những công nghệ mới nhất không?
+    - Tìm hiểu về cách [Đại học Cần Thơ](university) thúc đẩy sự sáng tạo trong chương trình [khoa học máy tính ứng dụng](majors). Có những dự án nào sinh viên đã tham gia mà bạn có thể chia sẻ không?
+    - Bạn có thể mô tả về cơ sở vật chất và phòng lab được sử dụng cho sinh viên ngành [hệ thống máy tính](majors) tại [ctu](university) không?
+    - Nếu tôi quyết định học [kỹ thuật phần mềm CLC](majors) tại [Đại học Cần Thơ](university), liệu rằng thầy cô có dạy đúng vơi chương trình và cung cấp cơ hội thực tập hay dự án nghiên cứu không?
+  

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* ------------------------------- light theme ------------------------------ */
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+}
+
+i {
+  padding-right: 1rem;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.Logo{
+  object-fit: cover;
+  width: 7rem;
+  margin-right: 2rem;
+}
+.sideBar {
+  flex: 3;
+  border-right: 1px solid rgb(207, 207, 207);
+}
+
+.main {
+  flex: 9;
+  background: rgb(245, 245, 245);
+  margin-bottom: 0;
+}
+
+.mainChat{
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 10rem 0 10rem;
+}
+
+.chats {
+  overflow: hidden;
+  overflow-y: scroll ;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+  
+}
+.chats::-webkit-scrollbar{
+  width: 0px;
+}
+.user, .bot {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+
+
+.chatImg{
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+}
+
+.bot {
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  width: fit-content;
+}
+
+.brand {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.upperSide {
+  padding: 2.5rem;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  height: 82%;
+}
+
+.upperSideTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.upperSideTopBrand>p {
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+.midBtn {
+  cursor: pointer;
+  background: #f8f8f8;
+  border: none;
+  color: rgb(84, 84, 84);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  transition: .25s;
+}
+
+.midBtn:hover {
+  background: #ececec;
+}
+.midBtn:active{
+  transform: scale(.98);
+}
+.bottomBtn {
+  cursor: pointer;
+  background: #f8f8f8;
+  border: none;
+  color: rgb(84, 84, 84);
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0 auto;
+  margin-bottom: .75rem;
+  border-radius: 1rem;
+  transition: .25s;
+}
+
+
+.bottomBtn>i {
+  margin-right: 3rem;
+}
+
+.bottomBtn:hover {
+  background: #ececec;
+}
+
+.bottomBtn:active{
+  transform: scale(.98);
+}
+
+.query {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgb(59, 59, 59);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 30rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.query:hover {
+  border: 1px solid rgb(164, 164, 164);
+}
+
+.listItems {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  color: rgb(59, 59, 59);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.chatFooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp {
+  padding: .5rem;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  width: 65rem;
+}
+
+.inp>input {
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+}
+
+/* #user-input{
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  padding: .5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: rgb(59, 59, 59);
+} */
+
+input[type="file"]{
+  display: none;
+}
+
+.inp>input, .send, .files, .mic, #image-input-icon, .playButton {
+  font-size: 1.5rem;
+  padding: .75rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: rgb(59, 59, 59);
+}
+
+.playButton {
+  font-size: 1.75rem;
+  margin-left: 2rem;
+}
+
+.send:hover, .files:hover, .mic:hover, .playButton:hover, #image-input-icon:hover{
+  color: #000;
+}
+.txt {
+  line-height: 2rem;
+}
+
+
+
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+  margin-top: 20px;
+  display: none; /* Ẩn biểu tượng loading mặc định */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

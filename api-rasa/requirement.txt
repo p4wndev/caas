@@ -1,0 +1,4 @@
+fasttext-wheel
+rasa==3.4.4
+google-generativeai
+websockets==10.0
