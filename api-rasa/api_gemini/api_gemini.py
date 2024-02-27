@@ -1,5 +1,5 @@
 import google.generativeai as genai
-
+import time
 genai.configure(api_key="AIzaSyBkrqxHG2q0vyF1TdFLrpdJOnBEiZbAxxk")
 
 # Set up the model
@@ -37,12 +37,13 @@ model = genai.GenerativeModel(model_name="gemini-pro",
 # response = model.generate_content(prompt_parts)
 # print(response.text)
 def gpt(prompt_parts):
-
   # textex = "Đại học cần Thơ thành lập vào ngày tháng năm nào"
   # prompt_parts = ["Đây là một cuộc trò chuyện giữa người và AI chatbot tư vấn giáo dục Uniberty. Hãy trả lời câu " + textex +" một cách ngắn gọn"]
-
+  gemini_start_time = time.time()
   response = model.generate_content(prompt_parts)
   text = response.text
+  gemini_elapsed_time = time.time() - gemini_start_time
+  print(f"Thời gian chạy rasa-text_gemini: {gemini_elapsed_time} seconds")
   print(text)
   return text
 

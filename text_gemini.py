@@ -1,4 +1,5 @@
 import google.generativeai as genai
+import time
 
 genai.configure(api_key="AIzaSyBkrqxHG2q0vyF1TdFLrpdJOnBEiZbAxxk")
 
@@ -34,7 +35,10 @@ model_img = genai.GenerativeModel(model_name="gemini-pro",
                               safety_settings=safety_settings_img)
 
 def gemini_text(prompt):
+  gemini_start_time = time.time()
   response = model_img.generate_content(prompt)
   text = (response.text)
+  gemini_elapsed_time = time.time() - gemini_start_time
+  print(f"+Thời gian chạy text_gemini: {gemini_elapsed_time} seconds")
   return text
 

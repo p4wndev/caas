@@ -1,6 +1,5 @@
 # rasa run --model D:\CAAS\api-rasa-cntt\models\nlu-20231220-152751.tar.gz --endpoints D:\CAAS\api-rasa-cntt\endpoints.yml --credentials D:\CAAS\api-rasa-cntt\credentials.yml
 # rasa train --domain D:\CAAS\api-rasa\api-cntt\domain.yml --config D:\CAAS\api-rasa\config\config-cntt.yml --data D:\CAAS\api-rasa\api-cntt\data\nlu.yml D:\CAAS\api-rasa\api-cntt\data\stories.yml
-
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
