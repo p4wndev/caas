@@ -39,13 +39,13 @@ model = genai.GenerativeModel(model_name="gemini-pro",
 def gpt(prompt_parts):
   # textex = "Đại học cần Thơ thành lập vào ngày tháng năm nào"
   # prompt_parts = ["Đây là một cuộc trò chuyện giữa người và AI chatbot tư vấn giáo dục Uniberty. Hãy trả lời câu " + textex +" một cách ngắn gọn"]
-  gemini_start_time = time.time()
-  response = model.generate_content(prompt_parts)
-  text = response.text
-  gemini_elapsed_time = time.time() - gemini_start_time
-  print(f"Thời gian chạy rasa-text_gemini: {gemini_elapsed_time} seconds")
-  print(text)
-  return text
+  # gemini_start_time = time.time()
+  # response = model.generate_content(prompt_parts)
+  # text = response.text
+  # gemini_elapsed_time = time.time() - gemini_start_time
+  # print(f"Thời gian chạy rasa-text_gemini: {gemini_elapsed_time} seconds")
+  # print(text)
+  return "Test Gemini"
 
 # chat = model.start_chat()
 # response = chat.send_message('Xin chào, tui tên là Khanh và là sinh viên đại học Cần Thơ. Trả lời ngắn gọn vừa phải')

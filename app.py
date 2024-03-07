@@ -1,5 +1,5 @@
-import asyncio
 import os
+import asyncio
 import shutil
 from flask import Flask, render_template, request, jsonify, flash, url_for
 import requests
@@ -13,6 +13,8 @@ import speech_recognition as sr
 import pyttsx3
 import time
 from rasa.core.agent import Agent
+from rasa.utils.endpoints import EndpointConfig
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "caas-srk"
@@ -22,10 +24,10 @@ classifier = load_model('models/model_response_classification.bin')
 load_classifier_elapsed_time = time.time() - load_classifier_start_time
 print(f"Thời gian load model_response_classification: {load_classifier_elapsed_time} seconds")
 
-
 load_rasa_start_time = time.time()
 rasa_model_path = "api-rasa/models/20240101-155929-vibrato-gravel.tar.gz"
-agent = Agent.load(rasa_model_path, action_endpoint="http://localhost:5055/webhook")
+action_endpoint = EndpointConfig(url="http://localhost:5055/webhook",type="http")
+agent = Agent.load(rasa_model_path, action_endpoint=action_endpoint)
 load_rasa_elapsed_time = time.time() - load_rasa_start_time
 print(f"Thời gian load model_rasa: {load_rasa_elapsed_time} seconds")
 
@@ -33,14 +35,12 @@ print(f"Thời gian load model_rasa: {load_rasa_elapsed_time} seconds")
 def index():
     return render_template('index.html')
 
-
 @app.route('/process_message', methods=['POST'])
-def process_message():
+async def process_message():
     start_time = time.time()
-
     user_input = request.form.get('user-input')
     image_file = request.files.get('image-input')
-
+    print("-------------------------->",user_input)
     model_start_time = time.time()
     predicted_label = classifier.predict(user_input)
     prediction = predicted_label[0][0]
@@ -48,16 +48,10 @@ def process_message():
     print(f"+Thời gian chạy model_response_classification: {model_elapsed_time} seconds")
 
     if prediction == '__label__Rasa':
-        # print(prediction)
         rasa_start_time = time.time()
-        # r = requests.post('http://localhost:5005/webhooks/rest/webhook', json={"message": user_input})
-        # for i in r.json():
-            # bot_message = i['text']
-            # print(f"{bot_message}")
-        bot_message_parse = asyncio.run(agent.parse_message(message_data=user_input))
-        # bot_message = asyncio.run(agent.handle_text([user_input, bot_message_parse]))
-        print(f"{bot_message_parse}")
-        bot_response = f"CTU Bot: {bot_message_parse}"
+        bot_message = await agent.handle_text(user_input)
+        bot_response = f"CTU Bot: {bot_message}"
+        print(bot_message)
         rasa_elapsed_time = time.time() - rasa_start_time
         print(f"+Thời gian chạy rasa: {rasa_elapsed_time} seconds")
     else:
@@ -66,7 +60,7 @@ def process_message():
             image_file.save(image_path)
             bot_response = f"CTU Bot: {gemini_img(image_path, user_input)}"
         else:
-            # user_input = "Đây là một cuộc trò chuyện giữa người và chatbot giáo dục tên là: 'CAAS'. Hãy trả lời câu " + user_input + " một cách ngắn gọn"
+            user_input = "Đây là một cuộc trò chuyện giữa người và chatbot giáo dục tên là: 'CAAS'. Hãy trả lời câu " + user_input + " một cách ngắn gọn"
             bot_response = f"CTU Bot: {gemini_text(user_input)}"
         # print(prediction)
         # print(bot_response)
@@ -86,22 +80,23 @@ def empty_directory(folder_path):
     except Exception as e:
         print(f"Lỗi: {e}")
 
-@app.route('/', methods=['POST'])
-
+@app.route('/record', methods=['POST'])
 def record():
+    asyncio.run(record_async())
+    return "Recording..."
+
+async def record_async():
     recognizer = sr.Recognizer()    
     with sr.Microphone() as source:
         print("Đang nghe...")
         audio = recognizer.listen(source)
     try:
         text = recognizer.recognize_google(audio, language='vi-VN')
-        return render_template('index.html', text=text)
+        print(text)
     except sr.UnknownValueError:
-        error_message = "Không nhận diện được giọng nói."
-        return render_template('index.html', error_message=error_message)
+        print("Không nhận diện được giọng nói.")
     except sr.RequestError as e:
-        error_message = f"Lỗi kết nối đến API nhận diện giọng nói: {str(e)}"
-        return render_template('index.html', error_message=error_message)
+        print(f"Lỗi kết nối đến API nhận diện giọng nói: {str(e)}")
 
 @app.route('/speak', methods=['POST'])
 def speak():
@@ -119,4 +114,4 @@ def speak():
     return jsonify({'audio_url': audio_url})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5002)
+    app.run(debug=True)

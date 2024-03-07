@@ -19,7 +19,7 @@ class ActionGreet(Action):
         textex=tracker.latest_message['text']
         text = "Đây là một cuộc trò chuyện giữa người và chatbot giáo dục tên là: 'CAAS'. Hãy trả lời câu "+ str(textex) +", đồng thời hỏi tên người đó và không nói tiếp bất cứ gì hết."
         answer=gpt(text)
-        dispatcher.utter_message(response="utter_greet",text =  answer)
+        dispatcher.utter_message(response="utter_greet",text = answer)
         return []
     
 class ActionGoodbye(Action):

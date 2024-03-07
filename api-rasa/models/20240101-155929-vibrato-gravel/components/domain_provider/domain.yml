@@ -1,0 +1,111 @@
+version: '3.1'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ask_name
+- benchmark
+- career_opportunities
+- criterias
+- curriculum
+- dormitory
+- facilities
+- goodbye
+- greet
+- help
+- profile
+- review
+- teach
+- thank
+- time
+- tuition
+entities:
+- majors
+- university
+- name
+slots:
+  majors:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: majors
+  university:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: university
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
+responses:
+  utter_greet:
+  - text: ''
+  utter_goodbye:
+  - text: ''
+  utter_thank:
+  - text: ''
+  utter_help:
+  - text: ''
+  utter_ask_name:
+  - text: ''
+  utter_profile:
+  - text: ''
+  utter_dormitory:
+  - text: ''
+  utter_facilities:
+  - text: ''
+  utter_time:
+  - text: ''
+  utter_benchmark:
+  - text: ''
+  utter_tuition:
+  - text: ''
+  utter_curriculum:
+  - text: ''
+  utter_criterias:
+  - text: ''
+  utter_review:
+  - text: ''
+  utter_career_opportunities:
+  - text: ''
+  utter_teach:
+  - text: ''
+  utter_default_fallback:
+  - text: ''
+actions:
+- utter_greet
+- utter_goodbye
+- utter_thank
+- utter_help
+- utter_ask_name
+- utter_profile
+- utter_dormitory
+- utter_facilities
+- utter_time
+- utter_benchmark
+- utter_tuition
+- utter_curriculum
+- utter_criterias
+- utter_review
+- utter_teach
+- utter_career_opportunities
+- utter_default_fallback
+- action_greet
+- action_goodbye
+- action_thank
+- action_help
+- action_ask_name
+- action_profile
+- action_dormitory
+- action_facilities
+- action_time
+- action_benchmark
+- action_tuition
+- action_curriculum
+- action_criterias
+- action_review
+- action_career_opportunities
+- action_teach
+- action_default_fallback

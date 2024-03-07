@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-majors",
+      "2": "I-majors",
+      "3": "L-majors",
+      "4": "U-majors",
+      "5": "B-name",
+      "6": "I-name",
+      "7": "L-name",
+      "8": "U-name",
+      "9": "B-university",
+      "10": "I-university",
+      "11": "L-university",
+      "12": "U-university",
+      "13": "B-đhct",
+      "14": "I-đhct",
+      "15": "L-đhct",
+      "16": "U-đhct",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-majors": 1,
+      "I-majors": 2,
+      "L-majors": 3,
+      "U-majors": 4,
+      "B-name": 5,
+      "I-name": 6,
+      "L-name": 7,
+      "U-name": 8,
+      "B-university": 9,
+      "I-university": 10,
+      "L-university": 11,
+      "U-university": 12,
+      "B-đhct": 13,
+      "I-đhct": 14,
+      "L-đhct": 15,
+      "U-đhct": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

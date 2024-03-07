@@ -67,7 +67,7 @@ responses:
   utter_ask_name:
   - text: ''
   utter_profile:
-  - text: ''
+  - text: 'abc'
   utter_dormitory:
   - text: ''
   utter_facilities:
