@@ -19,7 +19,7 @@ from rasa.utils.endpoints import EndpointConfig
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "caas-srk"
 
-load_classifier_start_time = time.time() 
+load_classifier_start_time = time.time()
 classifier = load_model('models/model_response_classification.bin')
 load_classifier_elapsed_time = time.time() - load_classifier_start_time
 print(f"Thời gian load model_response_classification: {load_classifier_elapsed_time} seconds")
@@ -66,7 +66,7 @@ async def process_message():
         # print(bot_response)
         folder_path = "uploads"
         empty_directory(folder_path)
-    
+
     elapsed_time = time.time() - start_time
     print(f"+Thời gian chạy process_message: {elapsed_time} seconds")
 
@@ -86,7 +86,7 @@ def record():
     return "Recording..."
 
 async def record_async():
-    recognizer = sr.Recognizer()    
+    recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Đang nghe...")
         audio = recognizer.listen(source)
@@ -101,14 +101,14 @@ async def record_async():
 @app.route('/speak', methods=['POST'])
 def speak():
     text_to_speak = remove_special_chars(request.json['tts'])
-    
+
     # Tạo đối tượng gTTS
     tts = gTTS(text=text_to_speak, lang='vi', slow=False)
-    
+
     # Lưu file audio
     audio_path = f'static/audio/{encode_string(text_to_speak)}.mp3'
     tts.save(audio_path)
-    
+
     # Trả về URL của file audio
     audio_url = request.host_url + audio_path
     return jsonify({'audio_url': audio_url})

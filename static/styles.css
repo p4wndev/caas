@@ -32,7 +32,7 @@ i {
 }
 .sideBar {
   flex: 3;
-  border-right: 1px solid rgb(207, 207, 207);
+  /*border-right: 1px solid rgb(207, 207, 207);*/
 }
 
 .main {
@@ -56,21 +56,19 @@ i {
   width: 100%;
   max-width: 70rem;
   height: calc(100vh - 17rem);
-  
 }
+
 .chats::-webkit-scrollbar{
   width: 0px;
 }
+
 .user, .bot {
-  margin: 1rem;
   padding: 2rem 3rem;
   font-size: 1.5rem;
   display: flex;
   align-items: flex-start;
   text-align: justify;
 }
-
-
 
 .chatImg{
   object-fit: cover;
@@ -81,7 +79,7 @@ i {
 .bot {
   background-color: rgb(255, 255, 255);
   border-radius: 2rem;
-  width: fit-content;
+  width: 100%;
 }
 
 .brand {
