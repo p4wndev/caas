@@ -3,6 +3,8 @@ function sendMessage() {
 	var imageInput = document.getElementById("image-input");
 	var imageFile = imageInput.files[0];
 
+	console.log("message sending...");
+
 	var formData = new FormData();
 	formData.append("user-input", userInput);
 	formData.append("image-input", imageFile);
@@ -12,19 +14,15 @@ function sendMessage() {
 		return; // Do nothing if both input and image are empty
 	}
 
-	fetch("/process_message", {
-		method: "POST",
-		body: formData,
-	})
-		.then((response) => response.json())
-		.then((data) => {
-			// appendMessage('user', data.userInput);
-			appendMessage("bot", data.botResponse);
-			// createNumberAttributes();
-			textToSpeech();
-			document.getElementById("loader").style.display = "none";
-		})
-		.catch((error) => console.error("Error:", error));
+	setTimeout(() => {
+		appendMessage(
+			"bot",
+			"dsfjsio dsjiofj sdoj sodijfso iodjfsiod fjjo sdfoij iosdjf jiojsidofjdiofj sdjfsdiofsjd jfosdfj oij fjsoidfj jsdiofjiodj fsdfiojfoi fjsiojf dijo fiosdjfiosdjf fsjdfojsdof jf sdofjiosdfj fioiwe foijfiod fiod"
+		);
+		// createNumberAttributes();
+		textToSpeech();
+		document.getElementById("loader").style.display = "none";
+	}, 1000);
 
 	if (imageFile) {
 		// Handle image upload
@@ -57,7 +55,9 @@ function sendMessage() {
 function appendMessage(sender, message) {
 	var chatDisplay = document.getElementById("chat-display");
 	var newMessage = document.createElement("div");
-	newMessage.className = sender;
+	//newMessage.className = sender;
+	newMessage.classList.add(sender);
+	//newMessage.classList.add("filler");
 	if (newMessage.className === "bot")
 		newMessage.innerHTML = `<img class="chatImg" src="static/assets/ctuIcon.png" /><p class="txt filler">${message}</p><button class="playButton button"><i class="ri-volume-up-fill"></i></button>`;
 	else if (newMessage.className === "user")
